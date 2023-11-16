@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/font-awesome-6.4.2/all.min.css')}}">
+    <!-- <link rel="stylesheet" href="/static/styles/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+    <title>Login and Reg  Page </title>
+</head>
+    <body>
+        <div class="container active--sign-up" id="container">
+            <div class="form-container sign-up" >
+                <form>
+                    <h1>Создание аккаунта</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-vk fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-telegram fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-odnoklassniki fa-fade"></i></a>              
+                    </div>
+                    <span>Или используйте для регистрации свой e&#8209;mail</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Регистрация</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Войти</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-vk fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-telegram fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram fa-fade"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-odnoklassniki fa-fade"></i></a>  
+                        </div>
+                        <span>Или воспользоваться паролем электронной почты</span>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <a href="#">Забыли пароль?</a>
+                        <button>Войти</button>
+                    </form>
+                </div>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <div class="toggle-panel toggle-left">
+                            <h1>Добро пожаловать!</h1>
+                            <p>Зарегистрируйтесь, указав свои персональные данные, чтобы использовать все возможности сайта</p>
+                            <button class="hidden" id="register">Регистрация</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>Добро пожаловать!</h1>
+                            <p>Введите свои персональные данные, чтобы использовать все возможности сайта</p>
+                            <button class="hidden" id="login">Войти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <script src="{{url_for('static', filename='script.js')}}"></script>  
+        </body>
+        </html>
