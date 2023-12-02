@@ -1,24 +1,42 @@
 from crud import get_users, create_user, get_user, get_user_by_username
-from flask import Flask, request,render_template
+from flask import Flask, request, render_template, abort, redirect
+from flask_wtf.csrf import CSRFProtect, generate_csrf
 import json
 
+from forms.register import RegistrationForm
 
+csrf = CSRFProtect()
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'ty4425hk54a21eee5719b9s9df7sdfklx'
+csrf.init_app(app)
 
 
-@app.route('/')
-@app.route('/home')
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def get_home():
-    return render_template("index.html")
+    if request.method == 'GET':
+        registration_form = RegistrationForm()
+        generate_csrf()
+        return render_template("index.html", registration_form=registration_form)
 
-if __name__ == '__main__':
-    with open('backend/app/api2/config.json', encoding='utf-8') as f:
-        config = json.load(f)
-    app.run(
-        host=config['SERVER_HOST'],
-        port=config['SERVER_PORT'],
-        debug=config['DEBUG']
-    )
+
+
+@app.route("/register", methods=["POST"])
+def user_register():
+    try:
+        registration_form = RegistrationForm(request.form)
+        if registration_form.validate():
+            name = registration_form.name.data.strip()
+            email = registration_form.email.data.strip()
+            password = registration_form.password.data.strip()
+            if create_user(name, email, password):
+                return redirect('/cabinet')
+        else:
+            return render_template("index.html", registration_form=registration_form)
+    except KeyError:
+        abort(403)
+
+
 # Апи для работы с таблицей пользователей
 @app.route("/api2/users", methods=['GET', "POST"])
 def api2_users():
@@ -43,6 +61,7 @@ def api2_users():
         create_user(username, password)
         return { "status": "OK" }
 
+
 @app.route("/api/login", methods=["POST"])
 def api2_login():
     username = request.json.get("username")
@@ -66,3 +85,13 @@ def api2_login():
         "status": "ERROR",
         "error": "an unknown error",
     }
+
+
+if __name__ == '__main__':
+    with open('backend/app/api2/config.json', encoding='utf-8') as f:
+        config = json.load(f)
+    app.run(
+        host=config['SERVER_HOST'],
+        port=config['SERVER_PORT'],
+        debug=config['DEBUG']
+    )
