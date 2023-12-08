@@ -43,3 +43,8 @@ def login(username, password):
         return False
     except User.DoesNotExist:
         return False
+
+
+database.create_tables([
+    User,
+])

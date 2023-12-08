@@ -33,8 +33,8 @@ def user_register():
                 return redirect('/cabinet')
         else:
             return render_template("index.html", registration_form=registration_form)
-    except KeyError:
-        abort(403)
+    except BaseException as e:
+        return abort(403)
 
 
 # Апи для работы с таблицей пользователей
