@@ -1,0 +1,32 @@
+<div class="outer-container">
+    <link rel="stylesheet" href="{{url_for('static', filename='style_player.css') }}">
+    <img src="" alt="Harry Styles' Fine Line album cover" id="background" />
+    <audio src="" id="track"></audio>
+  </div>
+  
+  <div class="player-container">
+    <img src="" alt="Harry Styles' Fine Line album cover" id="thumbnail" />
+  
+    <div class="box">
+      <div class="play-pause">
+        <i class="far fa-play-circle fa-3x" id="play"></i>
+        <i class="far fa-pause-circle fa-3x" id="pause"></i>
+      </div>
+      <div class="track-info">
+        <div id="track-artist">Harry Styles</div>
+        <div id="track-title">Watermelon Sugar</div>
+      </div>
+      <div class="next-prev">
+        <i class="far fa-arrow-alt-circle-left fa-2x" id="prev-track"></i>
+        <i class="far fa-arrow-alt-circle-right fa-2x" id="next-track"></i>
+      </div>
+      <div class="progress-bar">
+        <input type="range" id="progressBar" min="0" max="" value="0" />
+      </div>
+      <div class="track-time">
+        <div id="currentTime"></div>
+        <div id="durationTime"></div>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='script_player.js')}}"></script>  
+  </div>
