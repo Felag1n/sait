@@ -513,7 +513,27 @@ body{background-image:url(https://cdn.discordapp.com/attachments/117578542236696
   top: 7px;
   width: 60px;
   height: 52px;
+  opacity: 0.5; 
+  transition: opacity 0.3s; 
 }
+.ec:hover {
+  opacity: 1;
+}
+.ec::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+.ec:hover::after {
+  opacity: 1; 
+}
+
 .div12 {
   width: 91px;
   height: 32px;
