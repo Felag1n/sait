@@ -515,6 +515,7 @@ body{background-image:url(https://cdn.discordapp.com/attachments/117578542236696
   height: 52px;
   opacity: 0.5; 
   transition: opacity 0.3s; 
+  z-index: 10;
 }
 .ec:hover {
   opacity: 1;
