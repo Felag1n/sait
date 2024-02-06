@@ -1,0 +1,1541 @@
+.ec-frame,
+.ec-frame * {
+  box-sizing: border-box;
+}
+.ec-frame {
+  background: var(--anitype-fun-cod-gray, #080808);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1920px;
+  position: relative;
+}
+.div {
+  padding: 0px 0px 240px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-height: 1080px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.div-header-container {
+  padding: 0px 48px 0px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1920px;
+  height: 80px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  top: 0px;
+}
+.div-anime-main-div {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-anime-background-image {
+  background: radial-gradient(
+      closest-side,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.76) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(8, 8, 8, 1) 64.99999761581421%
+    );
+  height: 1080px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  top: 0px;
+  filter: blur(25px);
+  object-fit: cover;
+}
+.div-anime-central-comments-block-margin {
+  padding: 75px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 794px;
+}
+.div-anime-central-comments-block {
+  padding: 0px 80px 0px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.div-anime-additional-information-block {
+  padding: 0px 0px 240px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 300px;
+  position: relative;
+}
+.div-anime-additional-information-block-header {
+  padding: 15px 1296.81px 15px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-mmm-btn-margin {
+  padding: 0px 0px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-mmm-btn {
+  background: var(--anitype-fun-gallery, #eeeeee);
+  border-radius: 50px;
+  padding: 6px 16px 6px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.div2 {
+  color: var(--anitype-fun-black, #000000);
+  text-align: center;
+  font-family: var(
+    --anitype-fun-roboto-regular-14-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-14-font-size, 14px);
+  font-weight: var(--anitype-fun-roboto-regular-14-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-anime-additional-information-block-header-separator {
+  background: var(--anitype-fun-mine-shaft, #333333);
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1px;
+  position: relative;
+}
+.div3 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 1px;
+  position: relative;
+}
+.div4 {
+  padding: 75px 80px 0px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 1169px;
+}
+.div-anime-central-comments-block2 {
+  padding: 15px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.div-comments-block-list {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 725px;
+  position: relative;
+}
+.div-profile-comments-title {
+  padding: 0px 1642px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+.div5 {
+  color: var(--anitype-fun-nero, #ffffff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-medium-18-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-medium-18-font-size, 18px);
+  font-weight: var(--anitype-fun-roboto-medium-18-font-weight, 500);
+  position: relative;
+  max-width: 1760px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.textarea {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--anitype-fun-mine-shaft, #333333);
+  border-width: 1px;
+  width: 1760px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  top: 41px;
+  overflow: hidden;
+}
+.div-profile-comments-send-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 105px;
+}
+.button-margin {
+  padding: 5px 0px 25px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button {
+  background: var(--anitype-fun-dove-gray, #626262);
+  border-radius: 50px;
+  padding: 7px 12px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div6 {
+  color: var(--anitype-fun-black, #000000);
+  text-align: center;
+  font-family: var(
+    --anitype-fun-roboto-regular-13-3-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(
+    --anitype-fun-roboto-regular-13-3-font-size,
+    13.300000190734863px
+  );
+  font-weight: var(--anitype-fun-roboto-regular-13-3-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-comments-block-comment {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 166px;
+}
+.div-comment-user-info {
+  padding: 0px 1490.52px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-user-avatar {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+.div-user-avatar-img {
+  border-radius: 21px;
+  border-style: solid;
+  border-color: var(--anitype-fun-scorpion, #6c6060);
+  border-width: 3px;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  position: relative;
+  object-fit: cover;
+}
+.div-avatar-badge-cont {
+  padding: 0px 13.47px 0px 13.47px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: -8px;
+}
+.div-avatar-badge {
+  background: var(--anitype-fun-scorpion, #6c6060);
+  border-radius: 5px;
+  padding: 0px 4.06px 1px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._2 {
+  color: var(--anitype-fun-nero, #ffffff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-9-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-9-font-size, 9px);
+  font-weight: var(--anitype-fun-roboto-regular-9-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-usernamewithdate-margin {
+  padding: 0px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-usernamewithdate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.nphne-sk-7-p-4-mpa {
+  color: var(--anitype-fun-alto, #dedede);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-16-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-16-font-size, 16px);
+  font-weight: var(--anitype-fun-roboto-regular-16-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.p-date-margin {
+  margin: 0 0 0 -0.66px;
+  padding: 2px 0px 0px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 89.14px;
+  position: relative;
+}
+._1 {
+  color: var(--anitype-fun-silver, #c4c4c4);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-11-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-11-font-size, 11px);
+  font-weight: var(--anitype-fun-roboto-regular-11-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div7 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-comments-line-margin {
+  padding: 10px 35px 0px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  min-height: 71px;
+  position: relative;
+}
+.div-comments-line {
+  background: var(--anitype-fun-mine-shaft, #282828);
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 51px;
+  min-height: 61px;
+  position: relative;
+}
+.div8 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.div9 {
+  padding: 7px 1639.92px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 12px;
+  left: -12px;
+  top: 24px;
+}
+.div-to-answer-button {
+  border-radius: 18px;
+  padding: 8px 11.14px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div10 {
+  color: var(--anitype-fun-limeade, #3ea6ff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-12-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-12-font-size, 12px);
+  font-weight: var(--anitype-fun-roboto-regular-12-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-comments-block-comment2 {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 269px;
+}
+.div-comment-user-info2 {
+  padding: 0px 1544.28px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-user-avatar-img2 {
+  border-radius: 21px;
+  border-style: solid;
+  border-color: var(--anitype-fun-danube, #5f9ad5);
+  border-width: 3px;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  position: relative;
+  object-fit: cover;
+}
+.div-avatar-badge2 {
+  background: var(--anitype-fun-danube, #5f9ad5);
+  border-radius: 5px;
+  padding: 0px 4.06px 1px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._9 {
+  color: var(--anitype-fun-nero, #ffffff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-9-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-9-font-size, 9px);
+  font-weight: var(--anitype-fun-roboto-regular-9-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sheishi-12 {
+  color: var(--anitype-fun-alto, #dedede);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-16-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-16-font-size, 16px);
+  font-weight: var(--anitype-fun-roboto-regular-16-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.p-date-margin2 {
+  margin: 0 0 0 -0.42px;
+  padding: 2px 0px 0px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 89.14px;
+  position: relative;
+}
+.div11 {
+  padding: 5px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.div12 {
+  padding: 0px 1571.78px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-to-answer-button-margin {
+  padding: 15px 11.14px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-to-answer-button-margin2 {
+  flex-shrink: 0;
+  width: 53.14px;
+  height: 37px;
+  position: relative;
+}
+.div-to-answer-button2 {
+  border-radius: 18px;
+  padding: 8px 11.14px 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: -12px;
+  top: 7px;
+}
+._12 {
+  color: var(--anitype-fun-limeade, #3ea6ff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-12-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-12-font-size, 12px);
+  font-weight: var(--anitype-fun-roboto-regular-12-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-comments-block-comment3 {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 372px;
+}
+.div-comments-block-comment4 {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 475px;
+}
+.div-comment-user-info3 {
+  padding: 0px 1526.03px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-user-avatar-img3 {
+  border-radius: 21px;
+  border-style: solid;
+  border-color: var(--anitype-fun-windsor, #3d0b86);
+  border-width: 3px;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  position: relative;
+  object-fit: cover;
+}
+.div-avatar-badge-cont2 {
+  padding: 0px 10.95px 0px 10.94px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: -8px;
+}
+.div-avatar-badge3 {
+  background: var(--anitype-fun-windsor, #3d0b86);
+  border-radius: 5px;
+  padding: 0px 4.11px 1px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._35 {
+  color: var(--anitype-fun-nero, #ffffff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-9-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-9-font-size, 9px);
+  font-weight: var(--anitype-fun-roboto-regular-9-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wan-de-rer {
+  color: var(--anitype-fun-regal-blue, #ff4a6a);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-16-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-16-font-size, 16px);
+  font-weight: var(--anitype-fun-roboto-regular-16-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.p-date-margin3 {
+  margin: 0 0 0 -10.55px;
+  padding: 2px 0px 0px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 86.52px;
+  position: relative;
+}
+._22 {
+  color: var(--anitype-fun-silver, #c4c4c4);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-11-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-11-font-size, 11px);
+  font-weight: var(--anitype-fun-roboto-regular-11-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-comments-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 19px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 5px;
+  filter: blur(2.5px);
+}
+.div-comments-block-comment5 {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 578px;
+}
+.div-anime-body {
+  padding: 280px 333.72px 0px 333.72px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+.div-anime-left-body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  max-width: 302px;
+  position: relative;
+}
+.link2 {
+  border-radius: 15px;
+  flex-shrink: 0;
+  width: 302px;
+  height: 453px;
+  position: relative;
+  overflow: hidden;
+}
+._11-ae-4-aeb-0046-c-9587150-e-3982-c-8-da-446-jpeg {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.div-anime-central-body-margin {
+  padding: 0px 0px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  max-width: 1010px;
+  position: relative;
+}
+.div-anime-central-body {
+  width: 100%;
+  flex-shrink: 0;
+  height: 514px;
+  max-width: 960px;
+  position: relative;
+}
+.div-anime-central-body-title {
+  padding: 0px 431px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+.div13 {
+  color: var(--anitype-fun-nero, #ffffff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-medium-40-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-medium-40-font-size, 40px);
+  font-weight: var(--anitype-fun-roboto-medium-40-font-weight, 500);
+  position: relative;
+  max-width: 810px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-anime-central-body-description-margin {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 68px;
+}
+.div-anime-central-body-description {
+  padding: 0px 26px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.div14 {
+  color: var(--anitype-fun-alto, #dddddd);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-regular-17-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-regular-17-font-size, 17px);
+  font-weight: var(--anitype-fun-roboto-regular-17-font-weight, 400);
+  position: relative;
+  max-width: 810px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-anime-central-body-info-margin {
+  padding: 25px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 243px;
+}
+.div-anime-central-body-info {
+  padding: 0px 0px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.heading-2 {
+  padding: 0px 695px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div15 {
+  color: var(--anitype-fun-nero, #ffffff);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-medium-24-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-medium-24-font-size, 24px);
+  font-weight: var(--anitype-fun-roboto-medium-24-font-weight, 500);
+  position: relative;
+  max-width: 810px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-anime-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-anime-info-el {
+  padding: 3px 398.81px 3px 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.span-anime-info-el-key {
+  padding: 0px 92.19px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 243px;
+  min-width: 243px;
+  max-width: 243px;
+  position: relative;
+  overflow: hidden;
+}
+.div-catalog-info-watch-button-container-margin {
+  padding: 25px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 168px;
+}
+.div-catalog-info-watch-button-container {
+  padding: 10px 331.02px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-catalog-info-watch-button-container-sub-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-watch-button {
+  background: var(--anitype-fun-gallery, #eeeeee);
+  border-radius: 50px;
+  padding: 11px 25px 11px 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  max-height: 40px;
+  position: relative;
+}
+.svg-margin {
+  padding: 0px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.svg {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.layer-1 {
+  flex: 1;
+  width: 20px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.span-margin {
+  padding: 1px 0px 0px 4.66px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 99.98px;
+  position: relative;
+}
+.span {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-catalog-info-watch-button-margin {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  min-width: 50px;
+  min-height: 40px;
+  position: relative;
+}
+.div-catalog-info-watch-button {
+  background: var(--anitype-fun-thunder, #1e1d1e);
+  border-radius: 20px;
+  padding: 12.5px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 40px;
+  min-height: 40px;
+  position: relative;
+}
+.svg2 {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  overflow: visible;
+}
+.div-anime-right-body-margin {
+  padding: 0px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-anime-right-body {
+  padding: 0px 0px 441px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-search-rank-margin {
+  padding: 0px 4.56px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-search-rank {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+._8-88 {
+  color: var(--anitype-fun-atlantis, #5cdc34);
+  text-align: center;
+  font-family: var(
+    --anitype-fun-roboto-medium-28-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-medium-28-font-size, 28px);
+  font-weight: var(--anitype-fun-roboto-medium-28-font-weight, 500);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-material-button-margin {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-material-button {
+  background: var(--anitype-fun-gallery, #eeeeee);
+  border-radius: 50px;
+  padding: 5px 16px 5px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.svg3 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  left: 3.04px;
+  top: 3.36px;
+  overflow: visible;
+}
+.div16 {
+  background: rgba(255, 250, 250, 0.32);
+  width: 1920px;
+  height: 64px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+}
+.ec {
+  color: #874a7d;
+  text-align: left;
+  font-family: "NewRocker-Regular", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  position: absolute;
+  left: 901px;
+  top: 6px;
+  width: 61px;
+  height: 48px;
+  -webkit-text-stroke: 4px #141313;
+}
+.div17 {
+  color: #141313;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  left: 1205px;
+  top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div18 {
+  color: #141313;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  left: 1364px;
+  top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div19 {
+  color: #141313;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  position: absolute;
+  left: 1517px;
+  top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div20 {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  left: calc(50% - 859px);
+  top: 13px;
+  object-fit: cover;
+}
+.div-main-footer {
+  padding: 0px 39.48px 0px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1920px;
+  min-height: 160px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0px;
+}
+.div-main-footer-left {
+  flex-shrink: 0;
+  width: 147px;
+  height: 81px;
+  position: relative;
+}
+.div-main-footer-left-container-margin {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  top: 45px;
+}
+.div-main-footer-left-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link-margin {
+  padding: 0px 10px 4px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link-svg {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: visible;
+}
+.link-svg2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.link-svg3 {
+  flex-shrink: 0;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  overflow: visible;
+}
+.div-main-footer-central-container-margin {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.div-main-footer-central-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 200px;
+  position: relative;
+}
+.div21 {
+  color: var(--anitype-fun-dove-gray, #6f6f6f);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-semi-bold-16-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-semi-bold-16-font-size, 16px);
+  font-weight: var(--anitype-fun-roboto-semi-bold-16-font-weight, 600);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ec2 {
+  color: #874a7d;
+  text-align: left;
+  font-family: "NewRocker-Regular", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  position: relative;
+  width: 60px;
+  height: 52px;
+  -webkit-text-stroke: 4px #141313;
+}
+.div-main-footer-central {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.link4 {
+  padding: 0px 5.64px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 200px;
+  position: relative;
+}
+.link5 {
+  padding: 0px 93.64px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 200px;
+  position: relative;
+}
+.ear-candy {
+  color: var(--anitype-fun-dove-gray, #6f6f6f);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-semi-bold-16-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-semi-bold-16-font-size, 16px);
+  font-weight: var(--anitype-fun-roboto-semi-bold-16-font-weight, 600);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-8 {
+  flex-shrink: 0;
+  width: 200.14px;
+  height: 74.5px;
+  position: static;
+}
+.div-main-footer-central-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 10.14px;
+  top: 0px;
+}
+.div22 {
+  color: var(--anitype-fun-dove-gray, #6f6f6f);
+  text-align: left;
+  font-family: var(
+    --anitype-fun-roboto-semi-bold-16-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--anitype-fun-roboto-semi-bold-16-font-size, 16px);
+  font-weight: var(--anitype-fun-roboto-semi-bold-16-font-weight, 600);
+  position: absolute;
+  left: 10px;
+  top: 55.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
