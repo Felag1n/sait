@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD:frontend/package.json
-  "name": "08.02.24-1",
-=======
-  "name": "sait-front",
->>>>>>> b4fab129d0f1cad898cfca1f16e8dd7622011c13:frontend/sait front/package.json
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
