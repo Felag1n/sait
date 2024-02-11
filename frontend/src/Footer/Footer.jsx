@@ -2,7 +2,7 @@
 function Footer(){  
     return(
         <footer>
-             <a href='#' class='ec2'>EC</a>
+             <button onClick={} class='ec2'>EC</button>
         </footer>
     )
 
