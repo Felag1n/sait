@@ -1,9 +1,10 @@
 
+
 function Header(){
 
     return( 
         <header>
-            <a href='#' class='ec'>EC</a>
+            <button onClick={location.reload} class='ec'>EC</button>
         </header>
 
     );

@@ -1,3 +1,6 @@
+.font-roboto {
+  font-family: 'Roboto', sans-serif; font-family: 'New Rocker', system-ui;
+}
 .ec {
     -webkit-text-stroke-width: 3px;
      -webkit-text-stroke-color: black;
