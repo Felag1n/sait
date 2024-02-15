@@ -1,0 +1,44 @@
+.header {
+    background-color: #666464;
+}
+
+.header-container {
+    max-width: 923px;
+    margin-inline: auto;
+    position: relative;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex: 1;
+    gap: 13px;
+    justify-content: end;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-group {
+    display: flex;
+    gap: 7px;
+}
+
+.navigation-item {
+    color: #141313;
+    font-size: 11px;
+    font-size: 'Inter';
+    text-decoration: none;
+}

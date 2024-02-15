@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.new-rocker-regular {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 23px;
+    column-gap: 48px;
+}
+
+.group > * {
+    max-width: calc(100% / 6 - (48px * 5));
+    min-width: calc(100% / 5);
+}
+
+.box {
+    flex: 0 0 1;
+    aspect-ratio: 1;
+    background-color: gray;
+}

@@ -1,0 +1,8 @@
+.logo {
+    --font-size: 40px;
+    --text-stroke: calc(var(--font-size) / 20);
+
+    color: #874A7D;
+    -webkit-text-stroke: 2px #141313;
+    font-size: 40px;
+}
