@@ -5,7 +5,7 @@ function App() {
     <>
       <Header />
       <body>
-        <h1>Музыка</h1>
+      <h1 style={{ textAlign: "center"}}>Музыка</h1>
       
       <div>
 
@@ -22,6 +22,7 @@ function App() {
         <div className='box'>Lorem.</div>
       </div>
       </body>
+      
     </>
 
   );
