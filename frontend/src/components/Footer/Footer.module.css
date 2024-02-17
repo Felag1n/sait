@@ -2,21 +2,18 @@
   background-color: #666464;
 }
 
-.header-container {
+.footer-container {
   max-width: 923px;
-  margin-inline: auto;
-  position: relative;
+  margin: 0 auto;
   padding: 14px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between; 
 }
 
 .navigation {
   display: flex;
-  flex: 1;
   gap: 13px;
-  justify-content: end;
 }
 
 .logo {
@@ -25,10 +22,6 @@
   border: none;
   padding: 0;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .button-group {
@@ -39,6 +32,6 @@
 .navigation-item {
   color: #141313;
   font-size: 11px;
-  font-size: 'Inter';
+  font-family: 'Inter', sans-serif; 
   text-decoration: none;
 }
