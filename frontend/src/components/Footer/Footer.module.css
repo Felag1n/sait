@@ -35,3 +35,7 @@
   font-family: 'Inter', sans-serif; 
   text-decoration: none;
 }
+.social-icons{
+  display: flex;
+  gap: 10px;
+}
