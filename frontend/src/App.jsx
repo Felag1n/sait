@@ -6,9 +6,9 @@ function App() {
     <>
       <Header />
       <body>
-      <h1 style={{ textAlign: "center"}}>Музыка</h1>
-      <h2 style={{ textAlign: "center"}}>Обзор</h2>
-      <h3 style={{ textAlign: "center"}}>Интересные теги</h3>
+      <h1 style={{ textAlign: "center", color: "white" }}>Музыка</h1>
+      <h2 style={{ textAlign: "center", color: "white" }}>Обзор</h2>
+      <h3 style={{ textAlign: "center", color: "white" }}>Интересные теги</h3>
       <div>
 
       </div>
@@ -23,7 +23,7 @@ function App() {
         <div className='box'>Lorem.</div>
         <div className='box'>Lorem.</div>
       </div>
-      <h4 style={{ textAlign: "center"}}>Последниие релизы</h4>
+      <h4 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h4>
       
       <div className='group'>
         <div className='box'>Lorem.</div>
