@@ -1,5 +1,7 @@
 import Logo from "../Logo/Logo";
 import styles from './Footer.module.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
     const scrollToTop = () => {
@@ -29,11 +31,14 @@ function Footer() {
                     <a className="button button-inline" href="">Поддержка</a>
                     <a className="button" href="">FAQ</a>
                 </div>
-                <div class="social-icons">
-                        <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-vk" /></a>
+                <div className="social-icons">
+                    <a href="">
+                        <img src="./src/entities/photo/favicon.ico" alt="" width={20} height={20} />
+                    </a>
+                        {/* <a href="#" class="icon"><FontAwesomeIcon icon={faHouse} /></a>
                         <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-telegram" /></a>
                         <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-discord" /></a>
-                        <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>           
+                        <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>            */}
                     </div>
             </div>
         </footer>

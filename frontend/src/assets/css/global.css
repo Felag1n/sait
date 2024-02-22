@@ -1,4 +1,4 @@
-body{background-image:url(https://cdn.discordapp.com/attachments/1175785422366969877/1182405249483423855/IMG_8884.jpg?ex=658493b3&is=65721eb3&hm=fd873b2f10cd77bdb25e7b71fd90ae9130427c47d868092bb85725cff346209b&);}
+body{background-image:url('./src/entities/photo/IMG_8884.jpg');}
 * {
     box-sizing: border-box;
     padding: 0;
