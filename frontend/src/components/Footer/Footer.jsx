@@ -33,12 +33,19 @@ function Footer() {
                 </div>
                 <div className="social-icons">
                     <a href="">
-                        <img src="./src/entities/photo/favicon.ico" alt="" width={20} height={20} />
+                        <img src="./src/public/discord.svg" alt="" width={20} height={20} />
                     </a>
-                        {/* <a href="#" class="icon"><FontAwesomeIcon icon={faHouse} /></a>
-                        <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-telegram" /></a>
-                        <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-discord" /></a>
-                        <a href="#" class="icon"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a>            */}
+                    <a href="">
+                        <img src="./src/public/vk.svg" alt="" width={20} height={20} />
+                    </a>
+                    <a href="">
+                        <img src="./src/public/telegram.svg" alt="" width={20} height={20} />
+                    </a>
+                    <a href="">
+                        <img src="./src/public/instagram.svg" alt="" width={20} height={20} />
+                    </a>
+                        
+                        
                     </div>
             </div>
         </footer>
