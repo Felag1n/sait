@@ -32,6 +32,12 @@
     border-radius: 100vw;
     background-color: red;
     flex: 1 0 0;
-    max-width: calc(100% / 5 - 20px * 3);
-    min-width: calc(100% / 4 - 20px * 2);
+    max-width: calc(100% / 6 - 20px * 3); /* Уменьшаем максимальную ширину */
+    min-width: calc(100% / 5 - 20px * 2); /* Уменьшаем минимальную ширину */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 20px; /* Добавляем отступ вокруг элемента */
 }

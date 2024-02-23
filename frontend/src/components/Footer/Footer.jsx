@@ -1,7 +1,5 @@
 import Logo from "../Logo/Logo";
 import styles from './Footer.module.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
     const scrollToTop = () => {

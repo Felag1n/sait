@@ -14,7 +14,7 @@ function App() {
           <Body />
 
         </div>
-        {/* <div className='group'>
+        { <div className='group'>
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
@@ -24,10 +24,10 @@ function App() {
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
-        </div> */}
-        <h4 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h4>
+        </div> }
+        <h1 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h1>
         
-        {/* <div className='group'>
+        { <div className='group'>
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
@@ -37,7 +37,7 @@ function App() {
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
           <div className='box'>Lorem.</div>
-        </div> */}
+        </div>}
       <Footer/>
     </>
     
