@@ -23,7 +23,7 @@ function Header() {
                 </nav>
 
                 <div className={styles['button-group']}>
-                    <a className="button button-inline" href="">Вход</a>
+                    <a className="button button-inline" href="input.html">Вход</a>
                     <a className="button" href="">Регистрация</a>
                 </div>
             </div>

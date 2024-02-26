@@ -17,7 +17,7 @@ def get_home():
     if request.method == 'GET':
         registration_form = RegistrationForm()
         generate_csrf()
-        return render_template("index.html", registration_form=registration_form)
+        return render_template("input.html", registration_form=registration_form)
 
 
 
@@ -32,7 +32,7 @@ def user_register():
             if create_user(name, email, password):
                 return redirect('/cabinet')
         else:
-            return render_template("index.html", registration_form=registration_form)
+            return render_template("input.html", registration_form=registration_form)
     except BaseException as e:
         return abort(403)
 
