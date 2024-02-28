@@ -3,31 +3,36 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-    
+    aspect-ratio: 1;
+
 }
+
 .grid-box {
-    background-color: red; /* Если изображение не загружается, фон будет красным */
-    display: flex; /* Устанавливаем flex для корректного отображения изображений */
-    justify-content: center; /* Центрируем изображения по горизонтали */
-    align-items: center; /* Центрируем изображения по вертикали */
-    overflow: hidden; /* Обрезаем изображения, чтобы они не выходили за пределы .grid-box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: red;
 }
 
 .grid-box img {
-    max-width: 100%; /* Устанавливаем максимальную ширину изображения в размер контейнера */
-    max-height: 100%; /* Устанавливаем максимальную высоту изображения в размер контейнера */
-    object-fit: cover; /* Масштабируем изображения, чтобы они полностью заполняли контейнер */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .grid-box:first-child {
     grid-column: 3 / 5;
     grid-row: 1 / 3;
     aspect-ratio: 1;
+
 }
 
 .grid-box:nth-child(6) {
     grid-column: 1 / 3;
     grid-row: 3 / 5;
     aspect-ratio: 1;
+
 }
 
 .flex-container {
