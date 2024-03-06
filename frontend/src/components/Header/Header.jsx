@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
 
@@ -9,22 +10,22 @@ function Header() {
             <div className={styles['header-container']}>
                 <SearchBar />
 
-                <button
+                <Link to="/"
                     className={styles.logo}
-                    onClick={() => location.reload()}
+                    
                 >
                     <Logo />
-                </button>
+                </Link>
 
                 <nav className={styles.navigation}>
-                    <a href="" className={`inter ${styles['navigation-item']}`}>Музыка</a>
-                    <a href="" className={`inter ${styles['navigation-item']}`}>Чарты</a>
-                    <a href="" className={`inter ${styles['navigation-item']}`}>Избранное</a>
+                    <Link to="" className={`inter ${styles['navigation-item']}`}>Музыка</Link>
+                    <Link  to="/charts" className={`inter ${styles['navigation-item']}`}>Чарты</Link>
+                    <Link  to="/Izbranoe" className={`inter ${styles['navigation-item']}`}>Избранное</Link>
                 </nav>
 
                 <div className={styles['button-group']}>
-                    <a className="button button-inline" href="input.html">Вход</a>
-                    <a className="button" href="">Регистрация</a>
+                    <Link  to="button button-inline" href="input.html">Вход</Link>
+                    <Link  to="button" href="">Регистрация</Link>
                 </div>
             </div>
         </header>

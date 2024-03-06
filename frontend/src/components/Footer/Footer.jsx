@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import styles from './Footer.module.css';
 
@@ -20,14 +21,14 @@ function Footer() {
                 </button>
 
                 <nav className={styles.navigation}>
-                    <a href="" className={`inter ${styles['navigation-item']}`}>О нас</a>
-                    <a href="" className={`inter ${styles['navigation-item']}`}>Услуги</a>
-                    <a href="" className={`inter ${styles['navigation-item']}`}>Контакты</a>
+                    <Link to="" className={`inter ${styles['navigation-item']}`}>О нас</Link>
+                    <Link to="/Uslugi" className={`inter ${styles['navigation-item']}`}>Услуги</Link>
+                    <Link to="/contacts" className={`inter ${styles['navigation-item']}`}>Контакты</Link>
                 </nav>
 
                 <div className={styles['button-group']}>
-                    <a className="button button-inline" href="">Поддержка</a>
-                    <a className="button" href="">FAQ</a>
+                    <Link className="button button-inline" to="/suport">Поддержка</Link>
+                    <Link className="button" to="/FAQ">FAQ</Link>
                 </div>
                 <div className="social-icons">
                     <a href="">
