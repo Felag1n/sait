@@ -9,15 +9,17 @@ import Uslugi from "./pages/Uslugi";
 import Contacts from "./pages/contacts";
 import Izbranoe from "./pages/Izbranoe";
 import BOs from "./pages/BOs";
-import alternative from "./pages/alternative";
-import electronic from "./pages/electronic";
-import O_nas from "./pages/O_nas";
+import Alternative from "./pages/Alternative";
+import Electronic from "./pages/Electronic";
+import About from "./pages/About";
 import Music from "./pages/Music";
-import hip_hop from "./pages/hip_hop";
-import jazz from "./pages/jazz";
-import rap from "./pages/rap";
-import rnb from "./pages/rnb";
-import pop from "./pages/pop";
+import HipHop from "./pages/HipHop";
+import Jazz from "./pages/Jazz";
+import Rap from "./pages/Rap";
+import Rnb from "./pages/Rnb";
+import Pop from "./pages/Pop";
+import Rock from "./pages/Rock";
+import Punk from "./pages/Punk";
 function App() {
   return(
     <Routes>
@@ -29,19 +31,19 @@ function App() {
           <Route path="/Uslugi" element={<Uslugi />}/>
           <Route path="/contacts" element={<Contacts />}/>
           <Route path="/Izbranoe" element={<Izbranoe />}/>
-          <Route path="/electronic" element={<electronic/>}/>
-          <Route path="/hip_hop" element={<hip_hop/>}/>
-          <Route path="/jazz" element={<jazz/>}/>
-          <Route path="/pop" element={<pop/>}/>
-          <Route path="/punk" element={<punk/>}/>
-          <Route path="/rap" element={<rap/>}/>
-          <Route path="/rnb" element={<rnb/>}/>
-          <Route path="/rock" element={<rock/>}/>
-          <Route path="/O_nas" element={<O_nas/>}/>
-          <Route path="/Music" element={<Music/>}/>
+          <Route path="/electronic" element={<Electronic/>}/>
+          <Route path="/hiphop" element={<HipHop/>}/>
+          <Route path="/jazz" element={<Jazz/>}/>
+          <Route path="/pop" element={<Pop/>}/>
+          <Route path="/punk" element={<Punk/>}/>
+          <Route path="/rap" element={<Rap/>}/>
+          <Route path="/rnb" element={<Rnb/>}/>
+          <Route path="/rock" element={<Rock/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/music" element={<Music/>}/>
           <Route path="/BOs" element={<BOs/>}/>
-          <Route path="/alternative" element={<alternative/>}/>
-          <Route path="/pop" element={<pop/>}/>
+          <Route path="/alternative" element={<Alternative/>}/>
+          <Route path="/pop" element={<Pop/>}/>
           
                   {/* <Route path="about" element={<About />} /> */}
           {/* <Route path="dashboard" element={<Dashboard />} /> */}

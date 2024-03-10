@@ -1,4 +1,4 @@
-export default function hip_hop() {
+export default function HipHop() {
     return (
         <div>
             hip_hop page

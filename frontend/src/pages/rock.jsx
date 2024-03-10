@@ -1,7 +1,7 @@
-export default function rock() {
+export default function Rock() {
     return (
         <div>
-            rock page
+     GDFGDFGDGDG
         </div>
     )
 }

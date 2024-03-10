@@ -1,4 +1,4 @@
-export default function alternative() {
+export default function Alternative() {
     return (
         <div>
             alternative page

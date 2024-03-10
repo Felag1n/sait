@@ -32,7 +32,7 @@ function HomePage() {
                 <Link to="/jazz" className="grid-box">
                     <img src={jazz} alt="Image 3" />
                 </Link>
-                <Link to="/hip_hop" className="grid-box">
+                <Link to="/hiphop" className="grid-box">
                 <img src={hiphops} alt="Image 4" />
                 </Link>
                 <Link to="/rnb" className="grid-box">

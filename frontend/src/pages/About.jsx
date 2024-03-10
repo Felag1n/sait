@@ -1,4 +1,4 @@
-export default function O_nas() {
+export default function About() {
     return (
         <div>
             O_nas page

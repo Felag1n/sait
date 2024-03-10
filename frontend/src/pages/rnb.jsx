@@ -1,4 +1,4 @@
-export default function rnb() {
+export default function Rnb() {
     return (
         <div>
             rnb page
