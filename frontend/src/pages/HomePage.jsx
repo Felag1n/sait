@@ -20,34 +20,34 @@ function HomePage() {
         <div>
 
         <div className="body-div grid">
-                <Link to="#" className="grid-box">
+                <Link to="/rap" className="grid-box">
                     <img src={rap} alt="Image 5" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/punk" className="grid-box">
                     <img src={punk} alt="Image 1" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/rock" className="grid-box">
                     <img src={rock} alt="Image 2" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/jazz" className="grid-box">
                     <img src={jazz} alt="Image 3" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/hip_hop" className="grid-box">
                 <img src={hiphops} alt="Image 4" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/rnb" className="grid-box">
                 <img src={rnb} alt="Image 6" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/alternative" className="grid-box">
                 <img src={alternative} alt="Image 7" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/electronic" className="grid-box">
                 <img src={electronic} alt="Image 8" />
                 </Link>
-                <Link to="#" className="grid-box">
-                <img src={pop} alt="Image 9" />
+                <Link to="/pop" className="grid-box">
+                <img src={pop} alt="pop" />
                 </Link>
-                <Link to="#" className="grid-box">
+                <Link to="/BOs" className="grid-box">
                 <img src={BOs} alt="80's" />
                 </Link>
             </div>

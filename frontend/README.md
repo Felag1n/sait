@@ -15,3 +15,5 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDash,faBan,faTrash ,faCoffee} from '@fortawesome/free-solid-svg-icons'
  
  <FontAwesomeIcon icon={faBan}  />
+ 
+ npm install react-router-dom 
