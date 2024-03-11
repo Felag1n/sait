@@ -17,3 +17,4 @@ import { faDash,faBan,faTrash ,faCoffee} from '@fortawesome/free-solid-svg-icons
  <FontAwesomeIcon icon={faBan}  />
  
  npm install react-router-dom 
+ npm install  i (ЕСЛИ НЕТ ПАПКИ node_modules )
