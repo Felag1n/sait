@@ -2,6 +2,8 @@ import Header from "./components/Header/Header";
 import { Routes, Route, Outlet } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Footer from "./components/Footer/Footer";
+import Card from "./components/Card/Card";
+import Player from "./components/Player/Player";
 import Charts from "./pages/Charts";
 import Suport from "./pages/Suport";
 import FAQ from "./pages/FAQ";

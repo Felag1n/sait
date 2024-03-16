@@ -18,3 +18,5 @@ import { faDash,faBan,faTrash ,faCoffee} from '@fortawesome/free-solid-svg-icons
  
  npm install react-router-dom 
  npm install  i (ЕСЛИ НЕТ ПАПКИ node_modules )
+ npm install @radix-ui/react-popover@latest -E
+ npm i bootstrap@5.3.3
