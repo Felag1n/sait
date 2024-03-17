@@ -22,7 +22,6 @@ function Footer() {
 
                 <nav className={styles.navigation}>
                     <Link to="/about" className={`inter ${styles['navigation-item']}`}>О нас</Link>
-                    <Link to="/Uslugi" className={`inter ${styles['navigation-item']}`}>Услуги</Link>
                     <Link to="/contacts" className={`inter ${styles['navigation-item']}`}>Контакты</Link>
                 </nav>
 

@@ -18,22 +18,7 @@ export default function Punk() {
   
            
           </div>
-          <div class="text-container">
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, assumenda.
-            </h1>
-  
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam officiis libero tempore cumque, repellendus facilis reiciendis quia natus, mollitia voluptate labore sed dignissimos tempora ipsam. Neque nulla nihil aliquid?
-            </p>
-  
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corrupti dolore quaerat amet cupiditate hic fugiat iure. Possimus facere optio maxime. Eum earum cumque, ex non repellendus nihil in molestiae expedita necessitatibus fugiat nostrum consequatur hic vero architecto sequi. Similique deleniti saepe enim repellat cum ut repudiandae quia quo? Magnam.
-            </p>
-  
-            
-          </div>
-  
+          
             <div>
               <div className='group-punk'>
                 
