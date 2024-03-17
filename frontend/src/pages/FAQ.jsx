@@ -1,7 +1,8 @@
+import AccordionDemo from "../components/Accordion/AccordionDemo";
 export default function FAQ() {
     return (
         <div>
-            FAQ page
+          <AccordionDemo/>
         </div>
     )
 }

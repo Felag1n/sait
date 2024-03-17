@@ -20,3 +20,7 @@ import { faDash,faBan,faTrash ,faCoffee} from '@fortawesome/free-solid-svg-icons
  npm install  i (ЕСЛИ НЕТ ПАПКИ node_modules )
  npm install @radix-ui/react-popover@latest -E
  npm i bootstrap@5.3.3
+ npm install @radix-ui/react-accessible-icon
+ npm install @radix-ui/react-announce
+ npm install @radix-ui/react-direction
+ npm install @radix-ui/react-accordion
