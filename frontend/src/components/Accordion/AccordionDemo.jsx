@@ -4,6 +4,7 @@ import classNames from 'classname';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import './Accordion.css';
 
+
 const AccordionDemo = () => (
   <Accordion.Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
     <Accordion.Item className="AccordionItem" value="item-1">
@@ -26,6 +27,34 @@ const AccordionDemo = () => (
         </div>
       </Accordion.Content>
     </Accordion.Item>
+
+    <Accordion.Item className="AccordionItem" value="item-4">
+      <AccordionTrigger>Can it be animated?</AccordionTrigger>
+      <Accordion.Content className="AccordionContent">
+        <div className="AccordionContentText">
+          Yes! You can animate the Accordion with CSS or JavaScript.
+        </div>
+      </Accordion.Content>
+    </Accordion.Item>
+
+    <Accordion.Item className="AccordionItem" value="item-5">
+      <AccordionTrigger>Can it be animated?</AccordionTrigger>
+      <Accordion.Content className="AccordionContent">
+        <div className="AccordionContentText">
+          Yes! You can animate the Accordion with CSS or JavaScript.
+        </div>
+      </Accordion.Content>
+    </Accordion.Item>
+
+    <Accordion.Item className="AccordionItem" value="item-4">
+      <AccordionTrigger>Can it be animated?</AccordionTrigger>
+      <Accordion.Content className="AccordionContent">
+        <div className="AccordionContentText">
+          Yes! You can animate the Accordion with CSS or JavaScript.
+        </div>
+      </Accordion.Content>
+    </Accordion.Item>
+
   </Accordion.Root>
 );
 
