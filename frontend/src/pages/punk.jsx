@@ -23,14 +23,13 @@ export default function Punk() {
               <div className='group-punk'>
                 
                 <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
-                <div style={{ maxWidth: 250 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
+                <div style={{ maxWidth: 150 }} className='box punk'>Lorem.</div>
               </div>
             </div>
         </>
