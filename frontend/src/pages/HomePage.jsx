@@ -15,7 +15,7 @@ function HomePage() {
   return(
     <>
         <h1 style={{ textAlign: "center", color: "white" }}>Музыка</h1>
-        <h2 style={{ textAlign: "center", color: "white" }}>Обзор</h2>
+        <h2 style={{ textAlign: "center", color: "white", paddingLeft: "20px" }}>Обзор</h2>
         <h3 style={{ textAlign: "center", color: "white" }}>Интересные теги</h3>
         <div>
 
@@ -77,28 +77,28 @@ function HomePage() {
 
         </div>
         { <div className='group'>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
         </div> }
         <h1 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h1>
         
         { <div className='group'>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
-          <div className='box'>Lorem.</div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'><Link to="/page">Contact</Link></div>
+          <div className='box'>Lorem. <Link to="/page">Contact</Link></div>
         </div>}
     </>
     

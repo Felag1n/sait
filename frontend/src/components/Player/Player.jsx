@@ -57,84 +57,72 @@ function Player(props) {
 
 export default Player
 
-/*import React, { useState, useRef } from 'react';
 
-const Player = ({ player }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [elapsedTime, setElapsedTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const audioRef = useRef(null);
 
-  const handlePlayPause = () => {
-    setIsPlaying(!isPlaying);
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-      updateElapsedTime();
-    }
-  };
+// import React, { useState, useRef } from 'react';
 
-  const updateElapsedTime = () => {
-    setElapsedTime(audioRef.current.currentTime);
-    if (isPlaying) {
-      setTimeout(updateElapsedTime, 1000);
-    }
-  };
+// const Player = ({ player }) => {
+//   const [isPlaying, setIsPlaying] = useState(false);
+//   const [elapsedTime, setElapsedTime] = useState(0);
+//   const [duration, setDuration] = useState(0);
+//   const audioRef = useRef(null);
 
-  const formatTime = (seconds) => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = Math.floor(seconds % 60);
-    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
-  };
+//   const handlePlayPause = () => {
+//     setIsPlaying(!isPlaying);
+//     if (isPlaying) {
+//       audioRef.current.pause();
+//     } else {
+//       audioRef.current.play();
+//       updateElapsedTime();
+//     }
+//   };
 
-  const handleLoadedMetadata = (e) => {
-    setDuration(e.target.duration);
-  };
+//   const updateElapsedTime = () => {
+//     setElapsedTime(audioRef.current.currentTime);
+//     if (isPlaying) {
+//       setTimeout(updateElapsedTime, 1000);
+//     }
+//   };
 
-  return (
-    <div className="player">
-      <div className="controls">
-        <button onClick={handlePlayPause}>
-          {isPlaying ? (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
-              <path d="M14 10h4v4h-4v-4zm-6 0h4v4h-4v-4zm12 0h4v4h-4v-4zM10 22c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2V10h2v12zm12-12h-4v4h4v-4zM4 10h4v4H4V10zm12 0h4v4h-4V10z" />
-            </svg>
-          ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
-              <path d="M8 5v14l11-7Z" />
-            </svg>
-          )}
-        </button>
-        <div className="volume">
-          <div className="slider">
-            <div className="green"></div>
-          </div>
-          <div className="circle"></div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
-          <path clip-rule="evenodd" d="M12 21.6a9.6 9.6 0 1 0 0-19.2 9.6 9.6 0 0 0 0 19.2Zm.848-12.352a1.2 1.2 0 0 0-1.696-1.696l-3.6 3.6a1.2 1.2 0 0 0 0 1.696l3.6 3.6a1.2 1.2 0 0 0 1.696-1.696L11.297 13.2H15.6a1.2 1.2 0 1 0 0-2.4h-4.303l1.551-1.552Z" fill-rule="evenodd"></path>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
-          <path clip-rule="evenodd" d="M8.4 9.6a1.2 1.2 0 1 1 2.4 0v4.8a1.2 1.2 0 1 1-2.4 0V9.6Zm6 1.2a1.2 1.2 0 0 0-1.2 1.2v4.8a1.2 1.2 0 1 0 2.4 0V9.6a1.2 1.2 0 0 0-1.2-1.2Z" fill-rule="evenodd"></path>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
-          <path clip-rule="evenodd" d="M12 21.6a9.6 9.6 0 1 0 0-19.2 9.6 9.6 0 0 0 0 19.2Zm4.448-10.448-3.6-3.6a1.2 1.2 0 0 0-1.696 1.696l1.551 1.552H8.4a1.2 1.2 0 1 0 0 2.4h4.303l-1.551 1.552a1.2 1.2 0 1 0 1.696 1.696l3.6-3.6a1.2 1.2 0 0 0 0-1.696Z" fill-rule="evenodd"></path>
-        </svg>
-        <div className="air"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="none" height="20" width="24">
-          <path d="M3.343 7.778a4.5 4.5 0 0 1 7.339-1.46L12 7.636l1.318-1.318a4.5 4.5 0 1 1 6.364 6.364L12 20.364l-7.682-7.682a4.501 4.501 0 0 1-.975-4.904Z"></path>
-        </svg>
-      </div>
-      <div className="time">
-        <div className="elapsed">{formatTime(elapsedTime)}</div>
-      </div>
-      <p className="timetext time_now">{formatTime(elapsedTime)}</p>
-      <p className="timetext time_full">{formatTime(duration)}</p>
-      <audio ref={audioRef} src={player.songUrl} onLoadedMetadata={handleLoadedMetadata} />
-    </div>
-  );
-};
+//   const formatTime = (seconds) => {
+//     const minutes = Math.floor(seconds / 60);
+//     const remainingSeconds = Math.floor(seconds % 60);
+//     return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+//   };
 
-export default Player;
+//   const handleLoadedMetadata = (e) => {
+//     setDuration(e.target.duration);
+//   };
 
+//   return (
+//     <div className="player">
+//       <div className="controls">
+//         <button onClick={handlePlayPause}>
+//           {isPlaying ? (
+//             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
+//               <path d="M14 10h4v4h-4v-4zm-6 0h4v4h-4v-4zm12 0h4v4h-4v-4zM10 22c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2V10h2v12zm12-12h-4v4h4v-4zM4 10h4v4H4V10zm12 0h4v4h-4V10z" />
+//             </svg>
+//           ) : (
+//             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="24" width="24">
+//               <path d="M8 5v14l11-7Z" />
+//             </svg>
+//           )}
+//         </button>
+//         <audio ref={audioRef} onLoadedMetadata={handleLoadedMetadata} src={player.songUrl}></audio>
+//         <div className="time">
+//           <div className="elapsed">{formatTime(elapsedTime)}</div>
+//         </div>
+//         <p className="timetext time_now">{formatTime(elapsedTime)}</p>
+//         <p className="timetext time_full">{formatTime(duration)}</p>
+//       </div>
+//       <div className="song-info">
+//         <div className="texts">
+//           <p className="title-1">{player.title1}</p>
+//           <p className="title-2">{player.title2}</p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Player;
