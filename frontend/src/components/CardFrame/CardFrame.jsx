@@ -4,7 +4,7 @@ function CardFrame(props) {
   return (
 <div className={styles.card}>
   <div className={styles.content}>
-        <div className={styles.bac}>
+        <div className={styles.back}>
       <div className={[styles.back,styles["content"]]}>
         <svg stroke="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px" fill="#ffffff">
 
@@ -27,9 +27,9 @@ function CardFrame(props) {
       <div className={styles.img}>
         <div className={styles.circle}>
         </div>
-        <div className={styles.circle} id="right">
+        <div className={styles.circle} id={styles.right}>
         </div>
-        <div className={styles.circle} id="bottom">
+        <div className={styles.circle} id={styles.bottom}>
         </div>
       </div>
 
