@@ -24,3 +24,4 @@ import { faDash,faBan,faTrash ,faCoffee} from '@fortawesome/free-solid-svg-icons
  npm install @radix-ui/react-announce
  npm install @radix-ui/react-direction
  npm install @radix-ui/react-accordion
+ npm i @radix-ui/react-icons
