@@ -62,7 +62,6 @@ function Layout() {
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gridTemplateRows: 'auto 1fr auto', minHeight: '100svh' }}>
       <Header />
       <div>
-        {/* <CardFrame/> */}
 
         {/* <Player player={{ songUrl: '/t-rex-roar.mp3' }}/> */}
         <Outlet />
