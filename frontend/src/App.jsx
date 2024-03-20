@@ -4,7 +4,6 @@ import HomePage from './pages/HomePage'
 import FramePage from './pages/FramePage'
 import Footer from "./components/Footer/Footer";
 import Charts from "./pages/Charts";
-import CardFrame from "./components/CardFrame/CardFrame"
 import Suport from "./pages/Suport";
 import FAQ from "./pages/FAQ";
 import Uslugi from "./pages/Uslugi";
@@ -63,7 +62,7 @@ function Layout() {
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gridTemplateRows: 'auto 1fr auto', minHeight: '100svh' }}>
       <Header />
       <div>
-        <CardFrame/>
+        {/* <CardFrame/> */}
 
         {/* <Player player={{ songUrl: '/t-rex-roar.mp3' }}/> */}
         <Outlet />
