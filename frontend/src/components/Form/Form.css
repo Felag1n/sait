@@ -30,7 +30,8 @@ button {
 
 .FormMessage {
   font-size: 13px;
-  color: white;
+  font-weight: bold;
+  color:rgb(252, 33, 33);
   opacity: 0.8;
 }
 
@@ -43,22 +44,22 @@ button {
   border-radius: 4px;
 
   font-size: 15px;
-  color: white;
-  background-color: var(--black-a5);
-  box-shadow: 0 0 0 1px var(--black-a9);
+  color: rgb(194, 147, 255);
+  background-color:0 0 0 1px var(--black-a9);
+  box-shadow: 0 0 0 1px white;
 }
 .Input:hover,
 .Textarea:hover {
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px rgb(202, 144, 216);
 }
 .Input:focus,
 .Textarea:focus {
-  box-shadow: 0 0 0 2px black;
+  box-shadow: 0 0 0 2px rgb(196, 24, 167);
 }
 .Input::selection,
 .Textarea::selection {
-  background-color: var(--black-a9);
-  color: white;
+  background-color: RoyalBlue	;
+  color: rgb(255, 255, 255);
 }
 
 .Input {
@@ -84,13 +85,13 @@ button {
   height: 35px;
   width: 100%;
 
-  background-color: white;
-  color: var(--violet-11);
+  background-color: rgb(194, 147, 255);
+  color: white;
   box-shadow: 0 2px 10px var(--black-a7);
 }
 .Button:hover {
-  background-color: var(--mauve-3);
+  background-color:  rgb(196, 24, 167);
 }
 .Button:focus {
-  box-shadow: 0 0 0 2px black;
+  box-shadow: 0 0 0 2px white;
 }

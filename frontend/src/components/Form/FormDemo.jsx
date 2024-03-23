@@ -4,11 +4,11 @@ import './Form.css';
 
 const FormDemo = () => (
   <Form.Root className="FormRoot">
-<Form.Field className="FormField" name="nickname">
+<Form.Field className="FormField" name="Name">
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-        <Form.Label className="FormLabel">Nickname</Form.Label>
+        <Form.Label className="FormLabel">Имя</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
-          Please enter your nickname
+          Пожалуйста, введите свое имя
         </Form.Message>
       </div>
       <Form.Control asChild>
@@ -19,10 +19,10 @@ const FormDemo = () => (
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
         <Form.Label className="FormLabel">Email</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
-          Please enter your email
+         Пожалуйста, введите свой email
         </Form.Message>
         <Form.Message className="FormMessage" match="typeMismatch">
-          Please provide a valid email
+        Пожалуйста, укажите действительный адрес электронной почты
         </Form.Message>
       </div>
       <Form.Control asChild>
@@ -31,9 +31,9 @@ const FormDemo = () => (
     </Form.Field>
     <Form.Field className="FormField" name="question">
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-        <Form.Label className="FormLabel">Question</Form.Label>
+        <Form.Label className="FormLabel">Вопрос</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
-          Please enter a question
+        Пожалуйста, введите свой вопрос
         </Form.Message>
       </div>
       <Form.Control asChild>
@@ -42,7 +42,7 @@ const FormDemo = () => (
     </Form.Field>
     <Form.Submit asChild>
       <button className="Button" style={{ marginTop: 10 }}>
-        Post question
+      Отправить вопрос
       </button>
     </Form.Submit>
   </Form.Root>
