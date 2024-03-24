@@ -22,6 +22,7 @@ import Rnb from "./pages/Rnb";
 import Pop from "./pages/Pop";
 import Rock from "./pages/Rock";
 import Punk from "./pages/Punk";
+import Player from "./components/Player/Player";
 function App() {
   return(
     <Routes>
