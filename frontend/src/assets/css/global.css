@@ -155,3 +155,12 @@ body{background-image:url('./src/entities/photo/heartback.png');}
     aspect-ratio: 1;
     width: 100%;
 }
+.btn-flat {
+    background-color: #CF91D8;
+    color: white;
+}
+
+.btn-xxl {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+}

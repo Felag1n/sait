@@ -23,40 +23,44 @@ import Pop from "./pages/Pop";
 import Rock from "./pages/Rock";
 import Punk from "./pages/Punk";
 import Player from "./components/Player/Player";
+import { ThemeProvider } from 'react-bootstrap';
+
 function App() {
   return(
-    <Routes>
-      <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/charts" element={<Charts />} />
-          <Route path="/suport" element={<Suport />}/>
-          <Route path="/FAQ" element={<FAQ />}/>
-          <Route path="/Uslugi" element={<Uslugi />}/>
-          <Route path="/contacts" element={<Contacts />}/>
-          <Route path="/Izbranoe" element={<Izbranoe />}/>
-          <Route path="/electronic" element={<Electronic/>}/>
-          <Route path="/hiphop" element={<HipHop/>}/>
-          <Route path="/jazz" element={<Jazz/>}/>
-          <Route path="/pop" element={<Pop/>}/>
-          <Route path="/punk" element={<Punk/>}/>
-          <Route path="/rap" element={<Rap/>}/>
-          <Route path="/rnb" element={<Rnb/>}/>
-          <Route path="/rock" element={<Rock/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/music" element={<Music/>}/>
-          <Route path="/BOs" element={<BOs/>}/>
-          <Route path="/alternative" element={<Alternative/>}/>
-          <Route path="/pop" element={<Pop/>}/>
-          <Route path="/page" element={<FramePage/>}/>
-          
-                  {/* <Route path="about" element={<About />} /> */}
-          {/* <Route path="dashboard" element={<Dashboard />} /> */}
-          {/* <Route path="*" element={<NoMatch />} /> */}
-          </Route>
-    </Routes>
+    <ThemeProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/charts" element={<Charts />} />
+            <Route path="/suport" element={<Suport />}/>
+            <Route path="/FAQ" element={<FAQ />}/>
+            <Route path="/Uslugi" element={<Uslugi />}/>
+            <Route path="/contacts" element={<Contacts />}/>
+            <Route path="/Izbranoe" element={<Izbranoe />}/>
+            <Route path="/electronic" element={<Electronic/>}/>
+            <Route path="/hiphop" element={<HipHop/>}/>
+            <Route path="/jazz" element={<Jazz/>}/>
+            <Route path="/pop" element={<Pop/>}/>
+            <Route path="/punk" element={<Punk/>}/>
+            <Route path="/rap" element={<Rap/>}/>
+            <Route path="/rnb" element={<Rnb/>}/>
+            <Route path="/rock" element={<Rock/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/music" element={<Music/>}/>
+            <Route path="/BOs" element={<BOs/>}/>
+            <Route path="/alternative" element={<Alternative/>}/>
+            <Route path="/pop" element={<Pop/>}/>
+            <Route path="/page" element={<FramePage/>}/>
+            
+                    {/* <Route path="about" element={<About />} /> */}
+            {/* <Route path="dashboard" element={<Dashboard />} /> */}
+            {/* <Route path="*" element={<NoMatch />} /> */}
+            </Route>
+            
+      </Routes>
+    </ThemeProvider>
     
   );
-  
 }
 
 function Layout() {
