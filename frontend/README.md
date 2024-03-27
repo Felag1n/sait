@@ -26,3 +26,4 @@ import { faDash,faBan,faTrash ,faCoffee} from '@fortawesome/free-solid-svg-icons
  npm install @radix-ui/react-accordion
  npm i @radix-ui/react-icons
  npm install @radix-ui/react-form
+ npm install react-bootstrap bootstrap
