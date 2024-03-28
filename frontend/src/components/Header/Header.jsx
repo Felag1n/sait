@@ -25,12 +25,12 @@ function Header() {
                 </nav>
                 
                 <div className={styles['button-group']}>
-                    <Button to="/" as={Link} variant="flat" size="xxl">
+                    <Button to="/" as={Button} variant="flat" size="xxl">
                         Вход
     
                     </Button>
                     <Button to="/" as={Button} variant="flat" size="xxl">
-                        Регестрация
+                        Регистрация
                     </Button>
                 </div>
             </div>
