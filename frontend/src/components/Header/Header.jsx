@@ -26,10 +26,12 @@ function Header() {
                 
                 <div className={styles['button-group']}>
                     <Button to="/" as={Link} variant="flat" size="xxl">
-                        Lorem, ipsum.
+                        Вход
+    
                     </Button>
-                    <Link className="button button-inline" href="">Вход</Link>
-                    <Link to="#" className="button btn-flat" href="">Регистрация</Link>
+                    <Button to="/" as={Button} variant="flat" size="xxl">
+                        Регестрация
+                    </Button>
                 </div>
             </div>
         </header>
