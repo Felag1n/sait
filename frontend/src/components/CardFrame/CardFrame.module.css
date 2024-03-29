@@ -39,7 +39,7 @@
     display: block;
     width: 160px;
     height: 160%;
-    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+    background: linear-gradient(90deg, transparent, #CF91D8, #CF91D8, #CF91D8, #CF91D8, transparent);
     animation: rotation_481 5000ms infinite linear;
   }
   
@@ -139,7 +139,7 @@
   }
   
   #bottom {
-    background-color: #ff8866;
+    background-color: #CF91D8;
     left: 50px;
     top: 0px;
     width: 150px;

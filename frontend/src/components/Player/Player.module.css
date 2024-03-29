@@ -53,7 +53,7 @@
 
 .elapsed {
   width: 42%;
-  background-color: #1db954;
+  background-color: #CF91D8;
   height: 100%;
   border-radius: 3px;
 }
@@ -84,7 +84,7 @@
 }
 
 .controls svg:hover {
-  color: #1db954;
+  color: #CF91D8;
 }
 
 .volume {
@@ -103,7 +103,7 @@
 }
 
 .volume .slider .green {
-  background-color: #1db954;
+  background-color: #CF91D8;
   height: 100%;
   width: 80%;
   border-radius: 3px;
@@ -149,7 +149,7 @@
 }
 
 .greenline {
-  background-color: #1db954;
+  background-color: #CF91D8;
   height: 20px;
   width: 2px;
   position: relative;
