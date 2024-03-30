@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
 
+
 import styles from './Header.module.css'
 
 function Header() {
@@ -25,12 +26,12 @@ function Header() {
                 </nav>
                 
                 <div className={styles['button-group']}>
-            <Link to="/login" className={`inter ${styles['navigation-item']}`}>
+            <Link to="/fsdfsdf" className={`inter ${styles['navigation-item']}`}>
                 <Button variant="flat" size="xxl">
                     Вход
                 </Button>
             </Link>
-            <Link to="/register" className={`inter ${styles['navigation-item']}`}>
+            <Link to="/sfsf" className={`inter ${styles['navigation-item']}`}>
                 <Button variant="flat" size="xxl">
                     Регистрация
                 </Button>

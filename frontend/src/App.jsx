@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import { Routes, Route, Outlet } from 'react-router-dom'
 import HomePage from './pages/HomePage'
+import LoginRegPage from './pages/LoginRegPage'
 import FramePage from './pages/FramePage'
 import Footer from "./components/Footer/Footer";
 import Charts from "./pages/Charts";
