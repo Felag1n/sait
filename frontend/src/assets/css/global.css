@@ -161,7 +161,7 @@ body{background-image:url('./src/entities/photo/heartback.png');}
     border-radius: 10px;
     transform: translateX(165pt);
 }
-
+.btn-flat:hover { background-color:  rgb(196, 24, 167); }
 .btn-xxl {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
