@@ -9,7 +9,7 @@ import CardFrame from "./components/CardFrame/CardFrame"
 import Suport from "./pages/Suport";
 import FAQ from "./pages/FAQ";
 import Uslugi from "./pages/Uslugi";
-import Contacts from "./pages/contacts";
+import Contacts from "./pages/Contacts";
 import Izbranoe from "./pages/Izbranoe";
 import BOs from "./pages/BOs";
 import Alternative from "./pages/Alternative";
