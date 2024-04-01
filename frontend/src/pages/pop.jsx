@@ -1,3 +1,4 @@
+
 export default function pop() {
     return (
         <> 
@@ -17,7 +18,6 @@ export default function pop() {
           
             <div>
               <div className='group-pop'>
-                
                 <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
                 <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
                 <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
@@ -31,3 +31,6 @@ export default function pop() {
         </>
     )
 }
+
+{/* <MediaBox audioSrc="audio_source.mp3" imageSrc="image_source.jpg" />
+<MediaBox audioSrc="audio_source.mp3" imageSrc="image_source.jpg" /> */}
