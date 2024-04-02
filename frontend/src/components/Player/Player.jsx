@@ -16,6 +16,16 @@ function Player({ player }) {
         updateElapsedTime();
       }
     };
+    // const [volume, setVolume] = useState(1);
+    
+    // const handleVolumeChange = (e) => {
+    //   setVolume(e.target.value);
+    //   audioRef.current.volume = e.target.value;
+
+    // const handleSeek = (e) => {
+    //   const seekTime = parseFloat(e.target.value);
+    //   audioRef.current.currentTime = seekTime;
+    //   setElapsedTime(seekTime);
 
     useCallback(() => {
     }, [isPlaying])
@@ -28,10 +38,18 @@ function Player({ player }) {
         console.log('1');
       }
     };
+  //   const updateElapsedTime = useCallback(() => {
+  //     if (audioRef.current && isPlaying) {
+  //         setElapsedTime(audioRef.current.currentTime);
+  //         setTimeout(updateElapsedTime, 1000);
+  //     }
+  // }, [isPlaying]); ??????
 
     const handleLoadedMetadata = (e) => {
       setDuration(e.target.duration);
     };
+
+
 
 
     return (
@@ -165,3 +183,60 @@ export default Player
 // };
 
 // export default Player;
+
+
+
+// return (
+//   <div className={styles.card}>
+//       {/* Элемент аудио */}
+//       <audio
+//           ref={audioRef}
+//           onLoadedMetadata={handleLoadedMetadata}
+//           onTimeUpdate={updateElapsedTime}
+//           onEnded={handleEnded}
+//           src={player.songUrl}
+//           volume={volume}
+//       ></audio>
+//       {/* Кнопка воспроизведения/паузы */}
+//       <button onClick={handlePlayPause}>
+//           <svg
+//               xmlns="http://www.w3.org/2000/svg"
+//               viewBox="0 0 24 24"
+//               fill="currentColor"
+//               height="24"
+//               width="24"
+//           >
+//               {/* SVG пути для иконок воспроизведения и паузы */}
+//           </svg>
+//       </button>
+//       {/* Элемент управления громкостью */}
+//       <input
+//           type="range"
+//           min="0"
+//           max="1"
+//           step="0.01"
+//           value={volume}
+//           onChange={handleVolumeChange}
+//       />
+//       {/* Ползунок перемотки */}
+//       <input
+//           type="range"
+//           min="0"
+//           max={duration}
+//           step="1"
+//           value={elapsedTime}
+//           onChange={handleSeek}
+//       />
+//       {/* Текущее время и длительность */}
+//       <p>{formatTime(elapsedTime)}</p>
+//       <p>{formatTime(duration)}</p>
+//   </div>
+// );
+// }
+
+// // Функция для форматирования времени в минуты и секунды
+// function formatTime(seconds) {
+// const date = new Date(0);
+// date.setSeconds(seconds);
+// return date.toISOString().substr(14, 5);
+// }
