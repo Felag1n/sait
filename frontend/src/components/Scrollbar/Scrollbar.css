@@ -1,0 +1,26 @@
+.scrollbar {
+    width: 200px; /* задайте нужную ширину */
+    height: 300px; /* задайте нужную высоту */
+    overflow: hidden;
+  }
+  
+  .scroll-content {
+    width: calc(100% + 17px); /* учитываем ширину скроллбара, чтобы избежать горизонтального скроллинга */
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px; /* добавляем отступ для правильного отображения скроллбара */
+  }
+  
+  /* Стилизация scrollbar */
+  .scroll-content::-webkit-scrollbar {
+    width: 10px; /* ширина вертикального скроллбара */
+  }
+  
+  .scroll-content::-webkit-scrollbar-thumb {
+    background-color:rgb(196, 24, 167); /* цвет ползунка скроллбара */
+    border-radius: 5px;
+  }
+  
+  .scroll-content::-webkit-scrollbar-track {
+    background-color: rgb(196, 24, 167) /* цвет трека скроллбара */
+  }

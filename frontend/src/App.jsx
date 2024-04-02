@@ -25,6 +25,7 @@ import Rock from "./pages/Rock";
 import Punk from "./pages/Punk";
 import Player from "./components/Player/Player";
 import { ThemeProvider } from 'react-bootstrap';
+import Scrollbar from "./components/Scrollbar/Scrollbar";
 
 function App() {
   return(
@@ -69,6 +70,7 @@ function Layout() {
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gridTemplateRows: 'auto 1fr auto', minHeight: '100svh' }}>
       <Header />
       <div>
+        <Scrollbar/>
         {/* <CardFrame/> */}
         {/* <Player player={{ songUrl: '/Serega_pirat_-_YA_jeto_ya_74535300.mp3' }}/> */}
         <Outlet />
