@@ -70,8 +70,8 @@ function Layout() {
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gridTemplateRows: 'auto 1fr auto', minHeight: '100svh' }}>
       <Header />
       <div>
-        <Scrollbar/>
-        {/* <CardFrame/> */}
+        {/* <Scrollbar/> */}
+         {/* <CardFrame/>  */}
         {/* <Player player={{ songUrl: '/Serega_pirat_-_YA_jeto_ya_74535300.mp3' }}/> */}
         <Outlet />
       </div>

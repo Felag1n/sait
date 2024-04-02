@@ -1,9 +1,11 @@
 import"../components/Body/FrameBody.css";
-
+import CardFrame from "../components/CardFrame/CardFrame";
 function FramePage() {
     return(
       <>
-         gdfgdfgdgdf 
+         <div>
+         <CardFrame/> 
+         </div>
       </>
       
     );
