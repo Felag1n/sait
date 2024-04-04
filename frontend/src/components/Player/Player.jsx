@@ -26,7 +26,7 @@ function Player({ player }) {
     //   const seekTime = parseFloat(e.target.value);
     //   audioRef.current.currentTime = seekTime;
     //   setElapsedTime(seekTime);
-
+    // }
     useCallback(() => {
     }, [isPlaying])
 

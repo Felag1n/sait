@@ -1,37 +1,25 @@
+import React, { useState } from 'react';
 
-import React from 'react';
+function LoginForm(props) {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-class LoginForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-    };
-  }
-
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
     // Добавьте здесь логику входа, например, отправку данных на ваш backend
     console.log('Отправка формы входа:', this.state);
   }
 
-  render() {
-    return (
-      <div className="form-container sign-in">
-        <form onSubmit={this.handleSubmit}>
-          <h1>Вход</h1>
-          <input type="email" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" />
-          <input type="password" name="password" value={this.state.password} onChange={this.handleChange} placeholder="Пароль" />
-          <button type="submit">Войти</button>
-        </form>
-      </div>
-    );
-  }
+  return (
+    <div className="form-container sign-in">
+      <form onSubmit={handleSubmit}>
+        <h1>Вход</h1>
+        <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+        <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Пароль" />
+        <button type="submit">Войти</button>
+      </form>
+    </div>
+  );
 }
 
 export default LoginForm;

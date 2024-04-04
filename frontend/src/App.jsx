@@ -26,6 +26,7 @@ import Punk from "./pages/Punk";
 import Player from "./components/Player/Player";
 import { ThemeProvider } from 'react-bootstrap';
 import Scrollbar from "./components/Scrollbar/Scrollbar";
+import LoginForm from "./components/LoginIn/LoginIn";
 
 function App() {
   return(
@@ -53,6 +54,7 @@ function App() {
             <Route path="/alternative" element={<Alternative/>}/>
             <Route path="/pop" element={<Pop/>}/>
             <Route path="/page" element={<FramePage/>}/>
+            <Route path="/login" element={<LoginForm />}></Route>
             
                     {/* <Route path="about" element={<About />} /> */}
             {/* <Route path="dashboard" element={<Dashboard />} /> */}
