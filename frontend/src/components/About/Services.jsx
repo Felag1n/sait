@@ -1,6 +1,6 @@
 import  './Services.css';
 function Services () {
-    let message = `There are many variations of passages of Lorem Ipsum available but the \n majority have suffered alteration in some injected humour.`;
+    let message = `EC - это место, где вы можете наслаждаться самыми свежими музыкальными хитами и открывать новых исполнителей.`;
     return (
       <section class="section-white">
  
@@ -10,7 +10,7 @@ function Services () {
        
                     <div class="col-md-12 text-center">
 
-                          <h2 class="section-title">The Team Behind Pacifico</h2>
+                          <h2 class="section-title">EC Team</h2>
 
                           <p class="section-subtitle">{message}</p>
                           
@@ -21,9 +21,9 @@ function Services () {
                   <div class="team-item">
                   
                       <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team1a.jpg" class="team-img" alt="pic" />                   
-                      <h3>JOHNATHAN HAWKINS</h3>            
-                      <div class="team-info"><p>Head of SEO</p></div>
-                      <p>Johnathan is our  co-founder and has developed search strategies for a variety of clients from international brands to medium sized businesses for over five years.</p>
+                      <h3>Черняев Артем</h3>            
+                      <div class="team-info"><p>Developer 1</p></div>
+                      <p>Студент 3 курса., группы ИСП-211</p>
                   
                       <ul class="team-icon">
                       
@@ -55,11 +55,11 @@ function Services () {
                   
                       <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team2a.jpg" class="team-img" alt="pic" />
                      
-                      <h3>ALEXANDRA SMITHS</h3>
+                      <h3>Любухина Соня</h3>
                       
-                      <div class="team-info"><p>SEO Specialist</p></div>
+                      <div class="team-info"><p>Design Developer</p></div>
 
-                      <p>Graduating with a degree in Spanish and English, Alexandra has always loved writing and now she’s lucky enough to do it as part of her new job inside our agency.</p>
+                      <p>Студентка 3 курса., группы ИСП-212</p>
                   
                       <ul class="team-icon">
                       
@@ -82,11 +82,11 @@ function Services () {
                   
                       <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team3a.jpg" class="team-img" alt="pic" />
                      
-                      <h3>ELISA JOHANSON</h3>
+                      <h3>Тюленева Соня</h3>
                       
-                      <div class="team-info"><p>Marketing Manager</p></div>
+                      <div class="team-info"><p>Developer 2</p></div>
 
-                      <p>Elisa first fell in love with digital marketing at the university. He loves to learn, and looks forward to being part of this new exciting industry for many years.</p>
+                      <p>Студентка 3 курса., группы ИСП-212</p>
                   
                       <ul class="team-icon">
                       
