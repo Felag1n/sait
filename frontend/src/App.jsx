@@ -25,7 +25,7 @@ import Rock from "./pages/Rock";
 import Punk from "./pages/Punk";
 import Player from "./components/Player/Player";
 import { ThemeProvider } from 'react-bootstrap';
-import Scrollbar from "./components/Scrollbar/Scrollbar";
+
 import LoginForm from "./components/LoginIn/LoginIn";
 
 function App() {
@@ -72,7 +72,7 @@ function Layout() {
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gridTemplateRows: 'auto 1fr auto', minHeight: '100svh' }}>
       <Header />
       <div>
-        {/* <Scrollbar/> */}
+
          {/* <CardFrame/>  */}
         {/* <Player player={{ songUrl: '/Manu_Chao_-_Me_gustas_tu_48056032.mp3' }}/> */}
         <Outlet />

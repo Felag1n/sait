@@ -166,3 +166,23 @@ body{background-image:url('./src/entities/photo/heartback.png');}
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
 }
+::-webkit-scrollbar {
+    width: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black-a7);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #CF91D8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(196, 24, 167);
+}

@@ -1,0 +1,16 @@
+.text-container-frames {
+    max-width: 200px; 
+    position: relative;
+    margin:  auto; /* Center the container horizontally */
+    bottom: -100px;
+    background-color:  #CF91D8; /* Add a light gray background color */
+    border-radius: 15px; /* скругление*/ 
+    right: 10px; 
+}
+
+h1 {
+    text-align: center;
+    color:  white;;
+    margin: 20px; 
+    }
+
