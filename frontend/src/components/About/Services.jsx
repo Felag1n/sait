@@ -1,3 +1,10 @@
+import artem from "/artem.jpg"
+import sofa from "/sofa.jpg"
+import sonya from "/sonya.jpg"
+import pint from "/pinterest.svg"
+import vk from "/vk.svg"
+import inst from "/instagram.svg"
+import tiktok from "/tiktok.svg"
 import  './Services.css';
 function Services () {
     let message = `EC - это место, где вы можете наслаждаться самыми свежими музыкальными хитами и открывать новых исполнителей.`;
@@ -20,27 +27,27 @@ function Services () {
 
                   <div class="team-item">
                   
-                      <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team1a.jpg" class="team-img" alt="pic" />                   
+                      <img src={artem} class="team-img" alt="pic" />                   
                       <h3>Черняев Артем</h3>            
                       <div class="team-info"><p>Developer 1</p></div>
                       <p>Студент 3 курса., группы ИСП-211</p>
                   
                       <ul class="team-icon">
                       
-                          <li><a href="#" class="twitter">
-                            <i class="fa fa-twitter"></i>
+                      <li><a href="https://vk.com/felagin" class="vk">
+                        <img src={vk}  alt="pic" />
                         </a></li>
                           
-                          <li><a href="#" class="pinterest">
-                            <i class="fa fa-pinterest"></i>
+                        <li><a href="https://ru.pinterest.com/pipipopo876890767/" class="pinterest">
+                        <img src={pint}  alt="pic" />
                         </a></li>
                           
-                          <li><a href="#" class="facebook">
-                            <i class="fa fa-facebook"></i>
+                        <li><a href="https://www.instagram.com/" class="instagram">
+                        <img src={inst}  alt="pic" />
                         </a></li>
                           
-                          <li><a href="#" class="dribble">
-                            <i class="fa fa-dribbble"></i>
+                        <li><a href="https://www.tiktok.com/@felagin" class="tiktok">
+                        <img src={tiktok}  alt="pic" />
                         </a></li>
                           
                       </ul>
@@ -53,7 +60,7 @@ function Services () {
 
                   <div class="team-item">
                   
-                      <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team2a.jpg" class="team-img" alt="pic" />
+                      <img src={sofa} class="team-img" alt="pic" />
                      
                       <h3>Любухина Соня</h3>
                       
@@ -80,7 +87,7 @@ function Services () {
 
                   <div class="team-item">
                   
-                      <img src="https://demo.epic-webdesign.com/tf-pacifico/v1/images/team3a.jpg" class="team-img" alt="pic" />
+                      <img src={sonya} class="team-img" alt="pic" />
                      
                       <h3>Тюленева Соня</h3>
                       

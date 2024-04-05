@@ -99,8 +99,8 @@ ul.team-icon li a{
 	color:#fff;
 }
 
-ul.team-icon li a.twitter{
-	background-color: #4099ff;
+ul.team-icon li a.vk{
+	background-color: #3b5998;
 }
 
 ul.team-icon li a.pinterest{
@@ -108,11 +108,15 @@ ul.team-icon li a.pinterest{
 }
 
 ul.team-icon li a.facebook{
-	background-color: #3b5998;
+	background-color: #4099ff;
 }
 
-ul.team-icon li a.dribble{
-	background-color: #ea4c89;
+ul.team-icon li a.tiktok{
+	background-color: #da1212;
+}
+
+ul.team-icon li a.instagram{
+	background-color: #f85514;
 }
 
 .team-icon li a:hover{
