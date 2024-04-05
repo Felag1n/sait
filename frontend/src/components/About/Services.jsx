@@ -42,17 +42,28 @@ function ServicesComponent() {
     },
     // Add more team members here
   ];
-
   return (
     <section className="section-white">
       <div className="container">
         <div className="row">
-          <div className="col-md-12 text-center">
-            <h2 className="section-title">EC Team</h2>
-            <p className="section-subtitle">EC - это место, где вы можете наслаждаться самыми свежими музыкальными хитами и открывать новых исполнителей.</p>
-          </div>
           {teamMembers.map((member, index) => (
-            <TeamMember key={index} {...member} />
+            <div key={index} className="col-sm-6 col-md-4">
+              <div className="team-item">
+                <img src={member.image} className="team-img" alt="pic" />
+                <h3>{member.name}</h3>
+                <div className="team-info"><p>{member.title}</p></div>
+                <p>Студент 3 курса., группы ИСП-211</p>
+                <ul className="team-icon">
+                  {member.socialMedia.map((social, index) => (
+                    <li key={index}>
+                      <a href={social.link} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={social.icon} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           ))}
         </div>
       </div>
