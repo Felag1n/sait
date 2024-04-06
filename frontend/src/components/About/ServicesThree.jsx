@@ -1,10 +1,8 @@
 import  './Services.css';
 import React from 'react';
-import artem from "/artem.jpg";
-// import sofa from "../sofa.jpg";
-// import sonya from "../sonya.jpg";
+import sonya from "/sonya.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVk, faPinterest, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faVk, faTelegram} from '@fortawesome/free-brands-svg-icons';
 
 function TeamMember({ image, name, title, socialMedia }) {
   return (
@@ -30,14 +28,12 @@ function TeamMember({ image, name, title, socialMedia }) {
 function ServicesComponent() {
   const teamMembers = [
     {
-      image: artem,
-      name: 'Черняев Артем',
-      title: 'Developer 1',
+      image: sonya,
+      name: 'Тюленева Соня',
+      title: 'Developer 2',
       socialMedia: [
-        { link: 'https://vk.com/felagin', icon: faVk },
-        { link: 'https://ru.pinterest.com/pipipopo876890767/', icon: faPinterest },
-        { link: 'https://www.instagram.com/', icon: faInstagram },
-        { link: 'https://www.tiktok.com/@felagin', icon: faTiktok },
+        { link: 'https://vk.com/mirror_period', icon: faVk },
+        { link: 'https://t.me/ecoute_maman', icon: faTelegram },
       ],
     },
    
@@ -52,7 +48,7 @@ function ServicesComponent() {
                 <img src={member.image} className="team-img" alt="pic" />
                 <h3>{member.name}</h3>
                 <div className="team-info"><p>{member.title}</p></div>
-                <p>Студент 3 курса., группы ИСП-211</p>
+                <p>Студентка 3 курса., группы ИСП-212</p>
                 <ul className="team-icon">
                   {member.socialMedia.map((social, index) => (
                     <li key={index}>

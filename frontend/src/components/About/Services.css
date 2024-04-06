@@ -3,22 +3,29 @@
 	padding: 70px 0;
 }
 
-.team-item{
-	background: #f4f5f6;
-	text-align:center;
-	margin:20px 0;
-	padding:50px 20px 40px 20px;
-	border-radius: 8px 8px;
-	-webkit-transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-ms-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
+.team-item {
+    background: #f4f5f6;
+    text-align: center;
+    margin: 20px 0;
+    padding: 50px 20px 40px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
-.team-item:hover{
-	background: #3956de;
-	color: white;
+.team-item:hover {
+    animation: gradientChange 20s infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-color: #ae4dee; 
+    }
+    50% {
+        background-color: #eb5432;
+    }
+    100% {
+        background-color: #fcb045;
+    }
 }
 
 .team-item h3{
@@ -37,7 +44,7 @@
  }
 
 .team-item:hover h3{
-	color:#ddd;
+	color:#000000;
 }
 
 .team-info {
@@ -46,7 +53,7 @@
 }
 
 .team-info p{
-	color:#acacac;
+	color:#000000;
 	font-style:italic;
 }
 
@@ -94,29 +101,9 @@ ul.team-icon li a{
 	height: 34px;
 	font-size: 18px;
 	line-height: 18px;
-	background-color: #fff;
+	background-color: #CF91D8;
 	border-radius: 50%;
-	color:#fff;
-}
-
-ul.team-icon li a.vk{
-	background-color: #3b5998;
-}
-
-ul.team-icon li a.pinterest{
-	background-color: #C92228;
-}
-
-ul.team-icon li a.facebook{
-	background-color: #4099ff;
-}
-
-ul.team-icon li a.tiktok{
-	background-color: #da1212;
-}
-
-ul.team-icon li a.instagram{
-	background-color: #f85514;
+	color:#000000;
 }
 
 .team-icon li a:hover{
