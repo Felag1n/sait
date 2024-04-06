@@ -53,7 +53,7 @@ function ServicesComponent() {
                 <ul className="team-icon">
                   {member.socialMedia.map((social, index) => (
                     <li key={index}>
-                      <a href={social.link} target="_blank" rel="noopener noreferrer">
+                      <a href={social.link} target="_blank">
                         <FontAwesomeIcon icon={social.icon} />
                       </a>
                     </li>
