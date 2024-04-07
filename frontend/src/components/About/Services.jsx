@@ -34,7 +34,7 @@ function ServicesComponent() {
       socialMedia: [
         { link: 'https://vk.com/felagin', icon: faVk },
         { link: 'https://ru.pinterest.com/pipipopo876890767/', icon: faPinterest },
-        { link: 'https://www.instagram.com/', icon: faInstagram },
+        { link: 'https://www.instagram.com/feelagin_/', icon: faInstagram },
         { link: 'https://www.tiktok.com/@felagin', icon: faTiktok },
       ],
     },
