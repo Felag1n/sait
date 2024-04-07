@@ -1,4 +1,4 @@
-import styles from "../components/Body/FrameBody.css";
+import styles from "../components/Body/FrameBody.module.css";
 import CardFrame from "../components/CardFrame/CardFrame";
 import LikeButton from "../components/LikeButton/LikeButton";
 function FramePage() {
