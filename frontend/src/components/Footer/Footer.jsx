@@ -38,7 +38,7 @@ function Footer() {
                     <a href="" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faVk} size="lg" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faTelegram} size="lg" />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer">
