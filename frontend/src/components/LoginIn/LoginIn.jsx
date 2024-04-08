@@ -1,3 +1,4 @@
+import styles from './styles/LogReg.module.css'
 import React, { useState } from 'react';
 
 function LoginForm(props) {
