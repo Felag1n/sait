@@ -28,8 +28,8 @@ function Footer() {
                 </nav>
 
                 <div className={styles['button-group']}>
-                    <Link className="button button-inline" to="/support">Поддержка</Link>
-                    <Link className="button" to="/FAQ">FAQ</Link>
+                    <Link className="button button-inline" style={{ textDecoration: 'none' }} to="/support">Поддержка</Link>
+                    <Link className="button" style={{ textDecoration: 'none' }} to="/FAQ">FAQ</Link>
                 </div>
                 <div className="social-icons">
                     <a href="" target="_blank" rel="noopener noreferrer">
