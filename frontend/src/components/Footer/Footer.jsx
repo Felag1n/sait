@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import styles from './Footer.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiscord ,faVk,faTelegram,faInstagramSquare } from '@fortawesome/free-brands-svg-icons'; // 
 
 function Footer() {
     const scrollToTop = () => {
@@ -26,25 +28,23 @@ function Footer() {
                 </nav>
 
                 <div className={styles['button-group']}>
-                    <Link className="button button-inline" to="/suport">Поддержка</Link>
+                    <Link className="button button-inline" to="/support">Поддержка</Link>
                     <Link className="button" to="/FAQ">FAQ</Link>
                 </div>
                 <div className="social-icons">
-                    <a href="">
-                        <img src="/public/discord.svg" alt="" width={20} height={20} />
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faDiscord} size="lg" />
                     </a>
-                    <a href="">
-                        <img src="/public/vk.svg" alt="" width={20} height={20} />
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faVk} size="lg" />
                     </a>
-                    <a href="">
-                        <img src="/public/telegram.svg" alt="" width={20} height={20} />
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faTelegram} size="lg" />
                     </a>
-                    <a href="">
-                        <img src="/public/instagram.svg" alt="" width={20} height={20} />
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faInstagramSquare} size="lg" />
                     </a>
-                        
-                        
-                    </div>
+                </div>
             </div>
         </footer>
     );
