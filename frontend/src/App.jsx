@@ -74,7 +74,7 @@ function Layout() {
       <div>
 
          {/* <CardFrame/>  */}
-        {/* <Player player={{ songUrl: '/Manu_Chao_-_Me_gustas_tu_48056032.mp3' }}/> */}
+        <Player player={{ songUrl: '/Manu_Chao_-_Me_gustas_tu_48056032.mp3' }}/>
         <Outlet />
       </div>
       <Footer/>

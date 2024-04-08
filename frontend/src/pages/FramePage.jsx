@@ -1,7 +1,7 @@
 import styles from "../components/Body/FrameBody.module.css";
 import CardFrame from "../components/CardFrame/CardFrame";
 import LikeButton from "../components/LikeButton/LikeButton";
-function FramePage() {
+export default function FramePage(props) {
     return(
       <>
       <div className="text-container-frames"> 
@@ -19,4 +19,3 @@ function FramePage() {
     
   }
   
-  export default FramePage
