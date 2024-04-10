@@ -25,8 +25,11 @@ import Rock from "./pages/Rock";
 import Punk from "./pages/Punk";
 import Player from "./components/Player/Player";
 import { ThemeProvider } from 'react-bootstrap';
-
 import LoginForm from "./components/LoginIn/LoginIn";
+
+import RegistrationForm from "./components/Reg/Reg";
+
+// import "./components/Reg/styles/style.css"
 
 function App() {
   return(
@@ -55,6 +58,7 @@ function App() {
             <Route path="/pop" element={<Pop/>}/>
             <Route path="/page" element={<FramePage/>}/>
             <Route path="/login" element={<LoginForm />}></Route>
+            <Route path="/register" element={<RegistrationForm />}></Route>
             
                     {/* <Route path="about" element={<About />} /> */}
             {/* <Route path="dashboard" element={<Dashboard />} /> */}
@@ -74,7 +78,7 @@ function Layout() {
       <div>
 
          {/* <CardFrame/>  */}
-        {/* <Player player={{ songUrl: '/Manu_Chao_-_Me_gustas_tu_48056032.mp3' }}/> */}
+        <Player player={{ songUrl: '/Manu_Chao_-_Me_gustas_tu_48056032.mp3' }}/>
         <Outlet />
       </div>
       <Footer/>

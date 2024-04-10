@@ -26,17 +26,13 @@ function Header() {
                 </nav>
                 
                 <div className={styles['button-group']}>
-            <Link to="/fsdfsdf" className={`inter ${styles['navigation-item']}`}>
-                <Button variant="flat" size="xxl">
-                    Вход
-                </Button>
-            </Link>
-            <Link to="/sfsf" className={`inter ${styles['navigation-item']}`}>
-                <Button variant="flat" size="xxl">
-                    Регистрация
-                </Button>
-            </Link>
-        </div>
+                    <Button className={`inter ${styles['navigation-item']}`} style={{ transform: 'none' }} variant="flat" as={Link} to="/login" size="xxl">
+                        Регистрация
+                    </Button>
+                    <Button className={`inter ${styles['navigation-item']}`} style={{ transform: 'none' }} variant="flat" as={Link} to="/register" size="xxl">
+                        Регистрация
+                    </Button>
+                </div>
             </div>
         </header>
     )

@@ -16,7 +16,7 @@
     display: flex;
     flex: 1;
     gap: 13px;
-    justify-content: end;
+    justify-content: start;
 }
 
 .logo {
