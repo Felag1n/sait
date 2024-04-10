@@ -27,7 +27,7 @@ function Header() {
                 
                 <div className={styles['button-group']}>
                     <Button className={`inter ${styles['navigation-item']}`} style={{ transform: 'none' }} variant="flat" as={Link} to="/login" size="xxl">
-                        Регистрация
+                        Вход
                     </Button>
                     <Button className={`inter ${styles['navigation-item']}`} style={{ transform: 'none' }} variant="flat" as={Link} to="/register" size="xxl">
                         Регистрация
