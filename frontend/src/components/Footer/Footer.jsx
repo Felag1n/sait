@@ -31,7 +31,7 @@ function Footer() {
                     <Link className="button button-inline" style={{ textDecoration: 'none' }} to="/support">Поддержка</Link>
                     <Link className="button" style={{ textDecoration: 'none' }} to="/FAQ">FAQ</Link>
                 </div>
-                <div className="social-icons">
+                <div className={styles['social-icons']}>
                     <a href="" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faDiscord} size="lg" />
                     </a>

@@ -43,7 +43,11 @@ body{background-image:url('./src/entities/photo/heartback.png');}
     background-size: cover;
     background-position: center;
   }
+  
   .text-container { 
+    color:black;
+    font-size: 16px;
+    font-family:"Podkova", serif;;
     max-width: 600px; /* Set a maximum width for the container */
     margin:  auto; /* Center the container horizontally */
     padding: 20px; /* Add some padding around the content */
@@ -185,3 +189,10 @@ body{background-image:url('./src/entities/photo/heartback.png');}
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(196, 24, 167);
 }
+.h1 {
+    color:  black;
+    margin: 20px; 
+ }
+      
+    
+

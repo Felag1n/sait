@@ -2,7 +2,7 @@ export default function HipHop() {
     return (
         <>
          <div class="text-container">
-            <h1>Хип-хоп-музыка (англ. hip hop)</h1>
+         <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Хип-хоп-музыка (англ. hip hop)</h1>
   
             <p>
             Музыкальный жанр популярной музыки, развитый в США в 1970-х годах афроамериканцами, 

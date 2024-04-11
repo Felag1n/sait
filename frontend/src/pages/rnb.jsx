@@ -2,7 +2,7 @@ export default function Rnb() {
     return (
         <>
        <div class="text-container">
-            <h1>R&B  (англ. Rhythm and blues) </h1>
+       <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>R&B  (англ. Rhythm and blues) </h1>
   
             <p>Сокращенный вариант написания Rhythm and blues
             Ритм-энд-блюз, — жанр популярной музыки, первоначально исполняемой негритянскими музыкантами, интегрировавший в себя сочетания блюза, джаза и госпела.

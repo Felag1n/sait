@@ -47,7 +47,16 @@
   font-family: 'Inter', sans-serif; 
   text-decoration: none;
 }
-.social-icons{
+.social-icons {
   display: flex;
   gap: 10px;
+  margin: 5px 0;
+}
+.social-icons a {
+  color:rgb(45,43,95); /* Устанавливаем начальный цвет иконок */
+  transition: color 0.3s ease; /* Добавляем плавный переход для изменения цвета * /* Добавляем плавный переход для изменения цвета */
+}
+
+.social-icons a:hover {
+  color: rgb(255, 0, 128); /* Устанавливаем цвет красный при наведении курсора */
 }

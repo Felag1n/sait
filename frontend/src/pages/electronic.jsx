@@ -2,7 +2,7 @@ export default function electronic() {
     return (
         <>
         <div class="text-container">
-            <h1>Электро́нная му́зыка (от англ. Electronic music) </h1>
+        <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Электро́нная музыка (от англ. Electronic music) </h1>
   
             <p>
             Широкий жанр, обозначающий музыку, созданную с использованием электронных музыкальных инструментов 
