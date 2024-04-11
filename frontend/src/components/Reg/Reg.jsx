@@ -1,4 +1,4 @@
-// import styles from './Reg.module.css'
+import styles from './Reg.module.css'
 import React, { useState } from 'react';
 // import axios from './api/axios';
 function RegistrationForm(props) {
