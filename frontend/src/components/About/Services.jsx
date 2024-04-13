@@ -2,7 +2,7 @@ import  './Services.css';
 import React from 'react';
 import artem from "/artem.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVk, faPinterest, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faVk, faPinterest, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function TeamMember({ image, name, title, socialMedia }) {
   return (
@@ -35,12 +35,13 @@ function ServicesComponent() {
         { link: 'https://vk.com/felagin', icon: faVk },
         { link: 'https://ru.pinterest.com/pipipopo876890767/', icon: faPinterest },
         { link: 'https://www.instagram.com/feelagin_/', icon: faInstagram },
-        { link: 'https://www.tiktok.com/@felagin', icon: faTiktok },
+        { link: 'https://github.com/Felag1n', icon: faGithub},
       ],
     },
    
   ];
   return (
+    <div className="centered-section">
     <section className="section-white">
       <div className="container">
         <div className="row">
@@ -66,6 +67,7 @@ function ServicesComponent() {
         </div>
       </div>
     </section>
+  </div>
   );
 }
 

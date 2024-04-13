@@ -2,7 +2,7 @@ import  './Services.css';
 import React from 'react';
 import sofa from "/sofa.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVk, faTelegram, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faVk, faTelegram, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function TeamMember({ image, name, title, socialMedia }) {
   return (
@@ -35,11 +35,13 @@ function ServicesComponent() {
         { link: 'https://vk.com/mmee00ww', icon: faVk },
         { link: 'https://t.me/sofalyub', icon: faTelegram },
         { link: 'https://www.instagram.com/sofialyubuhina?igsh=MWRiYjlyb3J6YmZsYg==', icon: faInstagram },
+        { link: 'https://github.com/sofalyub', icon: faGithub},
       ],
     },
    
   ];
   return (
+    <div className="centered-section">
     <section className="section-white">
       <div className="container">
         <div className="row">
@@ -65,6 +67,7 @@ function ServicesComponent() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 

@@ -3,6 +3,13 @@
 	padding: 70px 0;
 }
 
+.centered-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 77vh; /* Можете изменить высоту на нужное значение */
+  }
+
 .team-item {
 	display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@ import  './Services.css';
 import React from 'react';
 import sonya from "/sonya.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVk, faTelegram} from '@fortawesome/free-brands-svg-icons';
+import { faVk, faTelegram, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function TeamMember({ image, name, title, socialMedia }) {
   return (
@@ -34,12 +34,14 @@ function ServicesComponent() {
       socialMedia: [
         { link: 'https://vk.com/mirror_period', icon: faVk },
         { link: 'https://t.me/ecoute_maman', icon: faTelegram },
+        { link: 'https://github.com/SofiaT4', icon: faGithub},
       ],
     },
    
   ];
   return (
-    <section className="section-white">
+    <div className="centered-section">
+   <section className="section-white">
       <div className="container">
         <div className="row">
           {teamMembers.map((member, index) => (
@@ -64,6 +66,7 @@ function ServicesComponent() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
