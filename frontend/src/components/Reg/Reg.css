@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#b70071, #003b6c);
+}
+.container{
+    margin: 50px auto;
+    padding: 2rem 1rem;
+    width: 390px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+h1{
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    color: #07001f;
+}
+form input{
+    width: 92%;
+    outline: none;
+    padding: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+button{
+    width: 90%;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    background: rgb(17, 67, 143);
+}
+button:hover{
+    background: rgba(17, 107, 143, 0.8);
+}
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+.terms{
+    margin-top: 0.2rem;
+}
+.terms input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+}
+.terms a{
+    text-decoration: none;
+}
+.member{
+    font-size: 1rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member a{
+    text-decoration: none;
+}
+.recover{
+    text-align: right;
+    margin: 0.3rem 1.4rem 0 0;
+}
+.recover a{
+    text-decoration: none;
+}
