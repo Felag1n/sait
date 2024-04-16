@@ -73,9 +73,9 @@ const SignUp = () => {
                 <input type="checkbox"  id="checkbox" />
                 <label htmlFor="checkbox">I agree to the <a href="#">Terms & Condition</a></label>
             </div>
-            <button disabled={!isFormValid}>Sign Up</button>
+            <button disabled={!isFormValid}><Link to='/'>Sign Up</Link></button>
             <div className="member">
-                Already have an account? <Link to='/'>Login</Link>
+                Already have an account? <Link to='/login'>Login</Link>
             </div>
         </div>
     </>
