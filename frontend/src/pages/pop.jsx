@@ -3,7 +3,7 @@ export default function pop() {
     return (
         <> 
         <div class="text-container">
-        <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Поп-музыка (англ. pop music от popular music)</h1>
+        <h1 style={{ fontFamily: 'Yeseva-One, sans-serif',color:"black" }}>Поп-музыка (англ. pop music от popular music)</h1>
   
             <p>
             Область массовой культуры, охватывающая различные формы, жанры и стили развлекательной и прикладной музыки 2-й половины XX — начала XXI веков.

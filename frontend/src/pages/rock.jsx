@@ -2,7 +2,7 @@ export default function Rock() {
     return (
         <>
         <div class="text-container">
-        <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Рок (англ. Rock) </h1>
+        <h1 style={{ fontFamily: 'Yeseva-One, sans-serif',color:"black" }}>Рок (англ. Rock) </h1>
 
         <p>
         Обобщающее название ряда направлений популярной музыки. 

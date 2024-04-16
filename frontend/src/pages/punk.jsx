@@ -2,7 +2,7 @@ export default function Punk() {
     return (
         <>
           <div class="text-container">
-            <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Панк (англ. Punk) — субкультура</h1>
+            <h1 style={{ fontFamily: 'Yeseva-One, sans-serif',color:"black" }}>Панк (англ. Punk) — субкультура</h1>
   
             <p>
               Возникшая в конце 1960-х - начале 1970-х годов в Великобритании, США, Канаде и Австралии.</p>

@@ -2,7 +2,7 @@ export default function Alternative() {
     return (
         <>
         <div class="text-container">
-        <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Альтернатива (англ. Alternative) </h1>
+        <h1 style={{ fontFamily: 'Yeseva-One, sans-serif',color:"black" }}>Альтернатива (англ. Alternative) </h1>
   
             <p>
             Музыкальное направление, имеющие общие черты с indie, britpop, shoegaze, post-grunge, garage и punk. 

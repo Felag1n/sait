@@ -51,7 +51,7 @@ body{background-image:url('./src/entities/photo/heartback.png');}
     max-width: 600px; /* Set a maximum width for the container */
     margin:  auto; /* Center the container horizontally */
     padding: 20px; /* Add some padding around the content */
-    background-color: #D2B48C; /* Add a light gray background color */
+    background-color: #c7b0cc; /* Add a light gray background color */
     border-radius: 15px; /* Add some rounded corners */ 
     margin-top: 15px; 
 }

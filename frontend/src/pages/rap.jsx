@@ -2,7 +2,7 @@ export default function rap() {
     return (
         <>
         <div class="text-container">
-            <h1 style={{ fontFamily: 'Rampart One, sans-serif',color:"black" }}>Рэп  (англ. rap, rapping)</h1>
+            <h1 style={{ fontFamily: 'Yeseva-One, sans-serif',color:"black" }}>Рэп  (англ. rap, rapping)</h1>
   
             <p>
             Также известное как рифмование (rhyming), фристайл (freestyling, или в просторечии spitting), эмсиинг (emceeing) или MC’инг (MCing, M.C.’ing) — музыкальная форма вокальной подачи, 
