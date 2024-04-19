@@ -77,28 +77,154 @@ function HomePage() {
 
         </div>
         { <div className='group'>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
+        <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
         </div> }
         <h1 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h1>
         
         { <div className='group'>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'><Link to="/page">Contact</Link></div>
-          <div className='box'>Lorem. <Link to="/page">Contact</Link></div>
+        <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
+          <Link to="/page"><div className='box'>
+          <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+          </div>
+          </Link>
         </div>}
     </>
     
