@@ -10,8 +10,10 @@ import rock from "../entities/photo/rock.png"
 import hiphops from "../entities/photo/hip-hop.png"
 import BOs from "../entities/photo/80s.png"
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 
 function HomePage() {
+  const [selectedImage, setSelectedImage] = useState(null);
   return(
     <>
         <h1 style={{ textAlign: "center", color: "white" }}>Музыка</h1>
@@ -52,27 +54,16 @@ function HomePage() {
                 </Link>
             </div>
             <div className="flex-container">
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
-                <div className="flex-box">
-                <img src="path/to/image1.jpg" alt="Image 1" />
-                </div>
+                {Array(7).fill().map((_, i) => (
+                    <div className="flex-box" onMouseOver={() => setSelectedImage(i)} onMouseOut={() => setSelectedImage(null)}>
+                        <img src={`path/to/image${i+1}.jpg`} alt={`Image ${i+1}`} />
+                        {selectedImage === i && (
+                            <div className="modal">
+                                <p>Не следует, однако, забывать, что консультация с широким активом выявляет срочную потребность стандартных подходов. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: убеждённость некоторых оппонентов выявляет срочную потребность соответствующих условий активизации. Как уже неоднократно упомянуто, акционеры крупнейших компаний неоднозначны и будут в равной степени предоставлены сами себе. Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь не даёт нам иного выбора, кроме определения вывода текущих активов. Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса описаны максимально подробно. Внезапно, стремящиеся вытеснить традиционное производство, нанотехнологии неоднозначны и будут описаны максимально подробно. Принимая во внимание показатели успешности, высокотехнологичная концепция общественного уклада играет важную роль в формировании экспериментов, поражающих по своей масштабности и грандиозности. Разнообразный и богатый опыт говорит нам, что синтетическое тестирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+                            </div>
+                        )}
+                    </div>
+                ))}
             </div>
 
         </div>
