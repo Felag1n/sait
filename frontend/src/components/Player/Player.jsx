@@ -1,6 +1,6 @@
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-// import ''
+import '../../assets/css/player.scss'
 const Player = () => (
   <AudioPlayer
   autoPlay
