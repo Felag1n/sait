@@ -5,20 +5,8 @@ function CardFrame(props) {
     <div className={styles.card}>
   <div className={styles.content}>
     <div className={styles.back}>
-      <div className={styles['back-content']}>
-        <svg stroke="#ffffff" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50px" width="50px" fill="#ffffff">
-
-          <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
-
-          <g strokeLinejoin={styles.round} strokeLinecap={styles.round} id="SVGRepo_tracerCarrier"></g>
-
-          <g id="SVGRepo_iconCarrier">
-
-            
-
-          </g>
-
-        </svg>
+    <div className={styles['back-content']}>
+          <img src="/artem.jpg" style={{display: 'block', width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', zIndex: 1}} />
         <strong></strong>
       </div>
     </div>
