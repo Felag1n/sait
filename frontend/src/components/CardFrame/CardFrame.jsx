@@ -1,5 +1,5 @@
 import styles from './CardFrame.module.css'
-
+import PlayerButton from "../PlayerButton/PlayerButton"
 function CardFrame(props) {
   return (
     <div className={styles.card}>
@@ -37,6 +37,7 @@ function CardFrame(props) {
           <p className={styles['card-footer']}>
             30 Mins &nbsp; | &nbsp; 1 Serving
           </p>
+          <PlayerButton/>
         </div>
       </div>
     </div>

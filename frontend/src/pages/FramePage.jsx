@@ -1,7 +1,7 @@
 import styles from "../components/Body/FrameBody.module.css";
 import CardFrame from "../components/CardFrame/CardFrame";
 import LikeButton from "../components/LikeButton/LikeButton";
-import PlayerButton from "../components/PlayerButton/PlayerButton"
+
 export default function FramePage(props) {
     return(
       <>
@@ -14,9 +14,7 @@ export default function FramePage(props) {
          <div>
           <LikeButton/>
          </div>
-         <div>
-          <PlayerButton/>
-         </div>
+
       </>
       
     );
