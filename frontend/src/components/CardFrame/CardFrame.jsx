@@ -6,7 +6,7 @@ function CardFrame(props) {
   <div className={styles.content}>
     <div className={styles.back}>
     <div className={styles['back-content']}>
-          <img src="/artem.jpg" style={{display: 'block', width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', zIndex: 1}} />
+          <img src="/artem.jpg" style={{display: 'block', width: '100%', height: '100%', objectFit: 'cover', position: 'absolute'}} />
         <strong></strong>
       </div>
     </div>
