@@ -6,7 +6,7 @@ import { faVk, faTelegram, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 function TeamMember({ image, name, title, socialMedia }) {
   return (
-    <div className="col-sm-6 col-md-4">
+    <div className="col-sm-6 col-md-4 col-lg-4">
       <div className="team-item">
         <img src={image} className="team-img" alt="pic" />
         <h3>{name}</h3>
@@ -45,7 +45,7 @@ function ServicesComponent() {
       <div className="container">
         <div className="row">
           {teamMembers.map((member, index) => (
-            <div key={index} className="col-sm-6 col-md-4">
+            <div key={index} className="col-sm-6 col-md-4 col-lg-12">
               <div className="team-item">
                 <img src={member.image} className="team-img" alt="pic" />
                 <h3>{member.name}</h3>

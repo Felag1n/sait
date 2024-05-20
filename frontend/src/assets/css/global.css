@@ -1,5 +1,5 @@
 @import '@radix-ui/colors/black-alpha.css';
-body{background-image:url('./src/entities/photo/heartback.png');}
+body{background-image:url('../../entities/photo/heartback.png');}
 * {
     box-sizing: border-box;
     padding: 0;

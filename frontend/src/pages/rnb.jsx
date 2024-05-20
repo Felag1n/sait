@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 export default function Rnb() {
     return (
         <>
@@ -14,17 +17,20 @@ export default function Rnb() {
           </div>
           
             <div>
-              <div className='group-rnb'>
-                
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box rnb'>Lorem.</div>
-              </div>
+            <div className="group-rnb">
+{[...Array(15)].map((_, index) => (
+  <Link to="/page" key={index}>
+    <div className="box rnb" style={{ maxWidth: 150 }}>
+      <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+      Lorem.
+    </div>
+  </Link>
+))}
+</div>
             </div>
         </>
     )

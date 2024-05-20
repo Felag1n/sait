@@ -10,10 +10,27 @@ import rock from "../entities/photo/rock.png"
 import hiphops from "../entities/photo/hip-hop.png"
 import BOs from "../entities/photo/80s.png"
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'
 
 function HomePage() {
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const [authors, setAuthors] = useState([])
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:1337/api/authors?populate=*')
+      .then((r) => {
+        const _authors = r.data.data.map((author) => ({
+            id: author.id,
+            description: author.attributes.Description,
+            image: "http://localhost:1337" + author.attributes.Image.data.attributes.url,
+        }))
+
+        setAuthors(_authors)
+      })
+  }, [])
   return(
     <>
         <h1 style={{ textAlign: "center", color: "white" }}>Музыка</h1>
@@ -53,170 +70,38 @@ function HomePage() {
                 <img src={BOs} alt="80's" />
                 </Link>
             </div>
+            <h1 style={{ textAlign: "center", color: "white" }}>Авторы</h1>
             <div className="flex-container">
-                {Array(7).fill().map((_, i) => (
-                    <div className="flex-box" onMouseOver={() => setSelectedImage(i)} onMouseOut={() => setSelectedImage(null)}>
-                        <img src={`path/to/image${i+1}.jpg`} alt={`Image ${i+1}`} />
-                        {selectedImage === i && (
-                            <div className="modal">
-                                <p>Не следует, однако, забывать, что консультация с широким активом выявляет срочную потребность стандартных подходов. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: убеждённость некоторых оппонентов выявляет срочную потребность соответствующих условий активизации. Как уже неоднократно упомянуто, акционеры крупнейших компаний неоднозначны и будут в равной степени предоставлены сами себе. Наше дело не так однозначно, как может показаться: выбранный нами инновационный путь не даёт нам иного выбора, кроме определения вывода текущих активов. Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса описаны максимально подробно. Внезапно, стремящиеся вытеснить традиционное производство, нанотехнологии неоднозначны и будут описаны максимально подробно. Принимая во внимание показатели успешности, высокотехнологичная концепция общественного уклада играет важную роль в формировании экспериментов, поражающих по своей масштабности и грандиозности. Разнообразный и богатый опыт говорит нам, что синтетическое тестирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
-                            </div>
-                        )}
+                {authors.map((author) => (
+                    <div className="flex-box" key={author.id}>
+                        <img className="flex-box__image" src={author.image}  />
+                          <div className="flex-box__modal">
+                              <p>
+                                {author.description}
+                              </p>
+                          </div>
                     </div>
                 ))}
             </div>
 
         </div>
-        { <div className='group'>
-        <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-        </div> }
+
         <h1 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h1>
         
-        { <div className='group'>
-        <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-          <Link to="/page"><div className='box'>
-          <img
-        className="Image"
-        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-        alt="Landscape photograph by Tobias Tullius"
-      />
-          </div>
-          </Link>
-        </div>}
+        {  <div className="group">
+  {[...Array(7)].map((_, index) => (
+    <Link to="/page" key={index}>
+      <div className="box" >
+        <img
+          className="Image"
+          src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+          alt="Landscape photograph by Tobias Tullius"
+        />
+        Lorem.
+      </div>
+    </Link>
+  ))}
+  </div>}
     </>
     
   );

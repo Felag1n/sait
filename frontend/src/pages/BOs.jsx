@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 export default function BOs() {
     return (
         <>
@@ -11,17 +14,21 @@ export default function BOs() {
           </div>
           
             <div>
-              <div className='group-bos'>
-                
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box bos'>Lorem.</div>
-              </div>
+            <div className="group-bos">
+{[...Array(15)].map((_, index) => (
+  <Link to="/page" key={index}>
+    <div className="box bos" style={{ maxWidth: 150 }}>
+      <img
+        className="Image"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+        alt="Landscape photograph by Tobias Tullius"
+      />
+      Lorem.
+    </div>
+  </Link>
+))}
+</div>
+              
             </div>
         </>
     )

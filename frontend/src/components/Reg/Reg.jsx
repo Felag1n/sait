@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import  './Reg.css';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import './Reg.css';
+import axios from 'axios';
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -8,182 +9,133 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [agree, setAgree] = useState(false);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  const usernameRegex = /^[a-zA-Z0-9]{5,}$/; // Username should be at least 5 characters long and contain only alphanumeric characters
-  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // Password should be minimum eight characters, at least one uppercase letter, one lowercase letter and one number
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Simple email validation
-  const phoneNumberRegex = /^\d{10}$/; // Phone number should be 10 digits
+  const usernameRegex = /^[a-zA-Z0-9]{5,}$/; // Имя пользователя должно содержать не менее 5 символов и содержать только буквы и цифры
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // Пароль должен содержать не менее восьми символов, минимум одну заглавную букву, одну строчную букву и одну цифру
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Простая валидация электронной почты
+  const phoneNumberRegex = /^\d{10}$/; // Номер телефона должен содержать 10 цифр
 
   const isUsernameValid = usernameRegex.test(username);
   const isPasswordValid = passwordRegex.test(password);
   const isPasswordsMatch = password === confirmPassword;
   const isEmailValid = emailRegex.test(email);
   const isPhoneNumberValid = phoneNumberRegex.test(phoneNumber);
+  const isFormValid = isUsernameValid && isPasswordsMatch && isEmailValid && isPhoneNumberValid && agree;
 
-  const isFormValid = isUsernameValid && isPasswordValid && isPasswordsMatch && isEmailValid && isPhoneNumberValid;
+  const handleChange = () => {
+    setAgree(!agree);
+    if (!agree) setError('');
+  };
+
+  async function onSubmit(event) {
+    event.preventDefault();
+
+    if (!isFormValid) {
+      setError('Ошибка валидации');
+      return;
+    }
+
+    try {
+      console.log('Sending request to server...');
+      const response = await axios.post("http://localhost:1337/api/auth/local/register", {
+        email,
+        username,
+        password,
+      });
+
+      console.log('Response from server:', response);
+
+      if (response.status !== 200) {
+        setError('Ошибка на сервере');
+        return;
+      }
+
+      const token = response.data.jwt;
+
+      localStorage.setItem('token', token);
+      localStorage.setItem('username', username);
+
+      navigate('/');
+    } catch (error) {
+      setError('Ошибка при регистрации');
+      console.error('Error during registration:', error);
+    }
+  }
 
   return (
-    <>
-        <div className="container">
-            <h1>Sign Up</h1>
-            <form action="">
-    <input 
-        type="text" 
-        placeholder='Username' 
-        value={username} 
-        onChange={(e) => setUsername(e.target.value)} 
-    />
-    {username && !isUsernameValid && <p>Username should be at least 5 characters long and contain only alphanumeric characters</p>}
+    <div className="container">
+      <h1>Регистрация</h1>
+      <form onSubmit={onSubmit}>
+        <input 
+          type="text" 
+          placeholder='Имя пользователя' 
+          value={username} 
+          onChange={(e) => setUsername(e.target.value)} 
+        />
+        {username && !isUsernameValid && <p>Имя пользователя должно содержать не менее 5 символов и содержать только буквы и цифры</p>}
 
-    <input 
-        type="password" 
-        placeholder='Password' 
-        value={password} 
-        onChange={(e) => setPassword(e.target.value)} 
-    />
-    {password && !isPasswordValid && <p>Password should be minimum eight characters, at least one uppercase letter, one lowercase letter and one number</p>}
+        <input 
+          type="password" 
+          placeholder='Пароль' 
+          value={password} 
+          onChange={(e) => setPassword(e.target.value)} 
+        />
+        {password && !isPasswordValid && <p>Пароль должен содержать не менее восьми символов, минимум одну заглавную букву, одну строчную букву и одну цифру</p>}
 
-    <input 
-        type="password" 
-        placeholder='Re-Enter Password' 
-        value={confirmPassword} 
-        onChange={(e) => setConfirmPassword(e.target.value)} 
-    />
-    {confirmPassword && !isPasswordsMatch && <p>Passwords do not match</p>}
+        <input 
+          type="password" 
+          placeholder='Повторите пароль' 
+          value={confirmPassword} 
+          onChange={(e) => setConfirmPassword(e.target.value)} 
+        />
+        {confirmPassword && !isPasswordsMatch && <p>Пароли не совпадают</p>}
 
-    <input 
-        type="email" 
-        placeholder='Email' 
-        value={email} 
-        onChange={(e) => setEmail(e.target.value)} 
-    />
-    {email && !isEmailValid && <p>Please enter a valid email</p>}
+        <input 
+          type="email" 
+          placeholder='Электронная почта' 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+        />
+        {email && !isEmailValid && <p>Введите корректный адрес электронной почты</p>}
 
-    <input 
-        type="tel" 
-        placeholder='Phone Number' 
-        value={phoneNumber} 
-        onChange={(e) => setPhoneNumber(e.target.value)} 
-    />
-    {phoneNumber && !isPhoneNumberValid && <p>Phone number should be 10 digits</p>}
-</form>
+        <input 
+          type="tel" 
+          placeholder='Номер телефона' 
+          value={phoneNumber} 
+          onChange={(e) => setPhoneNumber(e.target.value)} 
+        />
+        {phoneNumber && !isPhoneNumberValid && <p>Номер телефона должен содержать 10 цифр</p>}
 
-
-            <div className="terms">
-                <input type="checkbox"  id="checkbox" />
-                <label htmlFor="checkbox">I agree to the <a href="#">Terms & Condition</a></label>
-            </div>
-            <button disabled={!isFormValid}><Link to='/'>Sign Up</Link></button>
-            <div className="member">
-                Already have an account? <Link to='/login'>Login</Link>
-            </div>
+        <div className="terms">
+          <input 
+            type="checkbox" 
+            id="cbx2" 
+            style={{ display: 'none' }} 
+            checked={agree} 
+            onChange={handleChange} 
+          />
+          <label htmlFor="cbx2" className="check">
+            <svg width="18px" height="18px" viewBox="0 0 18 18">
+              <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+              <polyline points="1 9 7 14 15 4"></polyline>
+            </svg>
+          </label>
+          <label htmlFor="cbx2">Я согласен с <a href="#">условиями и положениями</a></label>
         </div>
-    </>
-  )
+
+        {error && <p className="error">{error}</p>}
+
+        <button type="submit" disabled={!isFormValid}>Зарегистрироваться</button>
+      </form>
+
+      <div className="member">
+        Уже есть аккаунт? <Link to='/login'>Войти</Link>
+      </div>
+    </div>
+  );
 }
 
-export default SignUp
-
-
-// import React, { useState } from 'react';
-// import { Link, useNavigate } from 'react-router-dom';
-// import axios from 'axios';
-// import { toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import './Reg.css';
-
-// const initialUser = { email: "", password: "", username: "" };
-
-// export const Register = () => {
-//     const [user, setUser] = useState(initialUser);
-//     const navigate = useNavigate();
-
-//     const handleUserChange = ({ target }) => {
-//         let { name, value } = target;
-        
-//         if (name === 'username') {
-//             value = value.charAt(0).toUpperCase() + value.slice(1);
-//         }
-
-//         setUser((currentUser) => ({
-//             ...currentUser,
-//             [name]: value,
-//         }));
-//     };
-
-//     const SignUp = async () => {
-//         const [username, setUsername] = useState('');
-//         const [password, setPassword] = useState('');
-//         const [confirmPassword, setConfirmPassword] = useState('');
-//         const [email, setEmail] = useState('');
-//         const [phoneNumber, setPhoneNumber] = useState('');
-      
-//         const usernameRegex = /^[a-zA-Z0-9]{5,}$/; // Username should be at least 5 characters long and contain only alphanumeric characters
-//         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // Password should be minimum eight characters, at least one uppercase letter, one lowercase letter and one number
-//         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Simple email validation
-//         const phoneNumberRegex = /^\d{10}$/; // Phone number should be 10 digits
-      
-//         const isUsernameValid = usernameRegex.test(username);
-//         const isPasswordValid = passwordRegex.test(password);
-//         const isPasswordsMatch = password === confirmPassword;
-//         const isEmailValid = emailRegex.test(email);
-//         const isPhoneNumberValid = phoneNumberRegex.test(phoneNumber);
-      
-//         const isFormValid = isUsernameValid && isPasswordValid && isPasswordsMatch && isEmailValid && isPhoneNumberValid;
-      
-//         const initialUser = { email: "", password: "", username: "" };
-//         try {
-//             const url = 'http://localhost:1337/api/auth/local/register';
-//             if (user.username && user.email && user.password) {
-//                 const res = await axios.post(url, user);
-//                 if (res) {
-//                     setUser(initialUser);
-//                     navigate('/login');
-//                 }
-//             }
-//         } catch (error) {
-//             toast.error(error.message, {
-//                 hideProgressBar: true,
-//             });
-//         }
-//     };
-
-//     return (
-//         <div className="container">
-//             <h1>Sign Up</h1>
-//             <form action="">
-//                 <input 
-//                     type="text" 
-//                     placeholder='Username' 
-//                     value={user.username} 
-//                     onChange={handleUserChange} 
-//                     name="username"
-//                 />
-//                 <input 
-//                     type="password" 
-//                     placeholder='Password' 
-//                     value={user.password} 
-//                     onChange={handleUserChange} 
-//                     name="password"
-//                 />
-//                 <input 
-//                     type="email" 
-//                     placeholder='Email' 
-//                     value={user.email} 
-//                     onChange={handleUserChange} 
-//                     name="email"
-//                 />
-//             </form>
-//             <div className="terms">
-//                 <input type="checkbox"  id="checkbox" />
-//                 <label htmlFor="checkbox">I agree to the <a href="#">Terms & Condition</a></label>
-//             </div>
-//             <button disabled={!user.username || !user.password || !user.email} onClick={SignUp}>Sign Up</button>
-//             <div className="member">
-//                 Already have an account? <Link to='/'>Login</Link>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Register;
+export default SignUp;

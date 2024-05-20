@@ -52,10 +52,47 @@
     flex: 1 0 0;
     max-width: calc(100% / 6 - 20px * 3); /* Уменьшаем максимальную ширину */
     min-width: calc(100% / 5 - 20px * 2); /* Уменьшаем минимальную ширину */
+    position: relative;
+    display: inline-block;
 }
-
+.flex-box__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
 h1 {
     text-align: center;
     color: white;
     margin: 20px; /* Добавляем отступ вокруг элемента */
 }
+
+ .flex-box__modal {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    background-color: rgb(113, 99, 99);
+    z-index: 10;
+    display: none;
+    padding: 10px;
+    border: 5px solid #351a1a;
+    box-shadow: 0 4px 8px rgba(176, 6, 6, 0.1);
+    max-width: 500px; /* Increased width */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .flex-box:hover > .flex-box__modal {
+      display: block;
+}
+
+    .flex-box__modal p {
+      margin: 0;
+      font-size: 14px; /* Adjust font size for readability */
+      line-height: 1.4;
+}
+.flex-box__modal p span {
+    font-weight: bold;
+    color: #007BFF;
+  }

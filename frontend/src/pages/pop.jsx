@@ -1,4 +1,6 @@
-
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 export default function pop() {
     return (
         <> 
@@ -17,16 +19,20 @@ export default function pop() {
           </div>
           
             <div>
-              <div className='group-pop'>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-                <div style={{ maxWidth: 150 }} className='box pop'>Lorem.</div>
-              </div>
+            <div className="group-pop">
+        {[...Array(15)].map((_, index) => (
+          <Link to="/page" key={index}>
+            <div className="box pop" style={{ maxWidth: 150 }}>
+              <img
+                className="Image"
+                src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+                alt="Landscape photograph by Tobias Tullius"
+              />
+              Lorem.
+            </div>
+          </Link>
+        ))}
+      </div>
             </div>
         </>
     )
@@ -34,3 +40,4 @@ export default function pop() {
 
 {/* <MediaBox audioSrc="audio_source.mp3" imageSrc="image_source.jpg" />
 <MediaBox audioSrc="audio_source.mp3" imageSrc="image_source.jpg" /> */}
+

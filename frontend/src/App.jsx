@@ -30,6 +30,9 @@ import RegistrationForm from "./components/Reg/Reg";
 
 // import "./components/Reg/styles/style.css"
 
+import { usePlayerStore } from './store/playerStore'
+import { SongPage } from "./pages/SongPage";
+
 function App() {
   return(
     <ThemeProvider>
@@ -58,12 +61,12 @@ function App() {
             <Route path="/page" element={<FramePage/>}/>
             <Route path="/login" element={<LoginForm />}></Route>
             <Route path="/register" element={<RegistrationForm />}></Route>
-            
+            <Route path="/song/:id" element={<SongPage />}></Route>
+
                     {/* <Route path="about" element={<About />} /> */}
             {/* <Route path="dashboard" element={<Dashboard />} /> */}
             {/* <Route path="*" element={<NoMatch />} /> */}
             </Route>
-            
       </Routes>
     </ThemeProvider>
     
@@ -71,14 +74,23 @@ function App() {
 }
 
 function Layout() {
+  const songUrl = usePlayerStore((state) => state.songUrl)
+
+  const isPlayingNow = songUrl !== null
+
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gridTemplateRows: 'auto 1fr auto', minHeight: '100svh' }}>
       <Header />
       <div>
 
          {/* <CardFrame/>  */}
-        {/* <Player player={{ songUrl: '/Manu_Chao_-_Me_gustas_tu_48056032.mp3' }}/> */}
         <Outlet />
+
+        { isPlayingNow && (
+          <Player
+            player={{ songUrl }}
+          />
+        )}
       </div>
       <Footer/>
     </div>

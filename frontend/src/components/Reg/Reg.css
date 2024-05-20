@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     height: 100vh;
     background: linear-gradient(#b70071, #003b6c);
 }
-.container{
+.container {
     margin: 50px auto;
     padding: 2rem 1rem;
     width: 390px;
@@ -16,12 +16,12 @@ body{
     text-align: center;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-h1{
+h1 {
     margin-bottom: 1.2rem;
     font-size: 2rem;
     color: #07001f;
 }
-form input{
+form input {
     width: 92%;
     outline: none;
     padding: 1px solid #fff;
@@ -30,7 +30,7 @@ form input{
     border-radius: 20px;
     background: #e4e4e4;
 }
-button{
+button {
     width: 90%;
     border: none;
     font-size: 1rem;
@@ -41,35 +41,103 @@ button{
     color: #fff;
     background: rgb(17, 67, 143);
 }
-button:hover{
+button:hover {
     background: rgba(17, 107, 143, 0.8);
 }
-input:focus{
+input:focus {
     border: 1px solid rgb(192, 192, 192);
 }
-.terms{
+.terms {
     margin-top: 0.2rem;
 }
-.terms input{
+.terms input {
     height: 1em;
     width: 1em;
     vertical-align: middle;
 }
-.terms a{
+.terms a {
     text-decoration: none;
 }
-.member{
+.member {
     font-size: 1rem;
     margin-top: 1.4rem;
     color: #636363;
 }
-.member a{
+.member a {
     text-decoration: none;
 }
-.recover{
+.recover {
     text-align: right;
     margin: 0.3rem 1.4rem 0 0;
 }
-.recover a{
+.recover a {
     text-decoration: none;
 }
+
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: var(--accent-color, #a3e583);
+  }
+  
+  #cbx2:checked + .check svg {
+    stroke: var(--accent-color, #a3e583);
+  }
+  
+  #cbx2:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx2:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }

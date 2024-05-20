@@ -11,7 +11,7 @@ export default function FramePage(props) {
          <div style={{ marginTop: 60, display: 'flex', justifyContent: 'flex-end', marginInline: 100 }}>
          <CardFrame/>
          </div>
-         <div>
+         <div style={{ marginTop: 60, display: 'flex', justifyContent: 'flex-end', marginInline: 100 }}>
           <LikeButton/>
          </div>
 
