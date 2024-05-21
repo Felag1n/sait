@@ -15,7 +15,6 @@ import BOs from "./pages/BOs";
 import Alternative from "./pages/Alternative";
 import Electronic from "./pages/Electronic";
 import About from "./pages/About";
-import Music from "./pages/Music";
 import HipHop from "./pages/HipHop";
 import Jazz from "./pages/Jazz";
 import Rap from "./pages/Rap";
@@ -54,7 +53,6 @@ function App() {
             <Route path="/rnb" element={<Rnb/>}/>
             <Route path="/rock" element={<Rock/>}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/music" element={<Music/>}/>
             <Route path="/BOs" element={<BOs/>}/>
             <Route path="/alternative" element={<Alternative/>}/>
             <Route path="/pop" element={<Pop/>}/>
