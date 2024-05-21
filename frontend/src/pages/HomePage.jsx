@@ -28,9 +28,16 @@ function HomePage() {
             image: "http://localhost:1337" + author.attributes.Image.data.attributes.url,
         }))
 
-        setAuthors(_authors)
-      })
-  }, [])
+        setAuthors(shuffleArray(_authors));
+      });
+  }, []);
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
   return(
     <>
         <h1 style={{ textAlign: "center", color: "white" }}>Музыка</h1>
@@ -72,7 +79,7 @@ function HomePage() {
             </div>
             <h1 style={{ textAlign: "center", color: "white" }}>Авторы</h1>
             <div className="flex-container">
-                {authors.map((author) => (
+            {authors.slice(0, 7).map((author) => (
                     <div className="flex-box" key={author.id}>
                         <img className="flex-box__image" src={author.image}  />
                           <div className="flex-box__modal">

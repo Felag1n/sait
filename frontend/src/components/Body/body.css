@@ -41,13 +41,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 10px;
-    column-gap: 20px;
+    row-gap: 8px;
+    column-gap: 15px;
 }
 
 .flex-box {
     aspect-ratio: 1;
-    border-radius: 100vw;
+    border-radius: 50vw;
     background-color: red;
     flex: 1 0 0;
     max-width: calc(100% / 6 - 20px * 3); /* Уменьшаем максимальную ширину */
@@ -70,7 +70,7 @@ h1 {
  .flex-box__modal {
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 0;
     transform: translate(0, -50%);
     background-color: rgb(113, 99, 99);
     z-index: 10;
@@ -78,7 +78,7 @@ h1 {
     padding: 10px;
     border: 5px solid #351a1a;
     box-shadow: 0 4px 8px rgba(176, 6, 6, 0.1);
-    max-width: 500px; /* Increased width */
+    max-width: 500spx; /* Increased width */
     width: 100%;
     box-sizing: border-box;
 }
