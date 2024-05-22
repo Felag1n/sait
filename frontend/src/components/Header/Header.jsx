@@ -26,8 +26,12 @@ function Header() {
                 </Link>
 
                 <nav className={styles.navigation}>
-                    <Link to="/charts" className={`inter ${styles['navigation-item']}`}>Чарты</Link>
-                    <Link to="/Izbranoe" className={`inter ${styles['navigation-item']}`}>Избранное</Link>
+                <Button className={`inter ${styles['navigation-item']}`} style={{ transform: 'none' }} variant="flat" as={Link} to="/charts" size="xxl">
+                    Чарты
+                </Button>
+                    {username && (
+                        <Link to="/Izbranoe" className={`inter ${styles['navigation-item']}`}>Избранное</Link>
+                    )}
                 </nav>
 
                 <div className={styles['button-group']}>

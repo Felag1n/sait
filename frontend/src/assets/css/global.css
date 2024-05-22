@@ -1,5 +1,8 @@
 @import '@radix-ui/colors/black-alpha.css';
-body{background-image:url('../../entities/photo/heartback.png');}
+body {
+    background-image: url('../../entities/photo/heartback.png');
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,8 +19,7 @@ body{background-image:url('../../entities/photo/heartback.png');}
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
+    font-variation-settings: "slnt" 0;
 }
 
 .group {
@@ -28,7 +30,7 @@ body{background-image:url('../../entities/photo/heartback.png');}
     column-gap: 48px;
 }
 
-.group-charts{
+.group-charts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -41,8 +43,10 @@ body{background-image:url('../../entities/photo/heartback.png');}
     width: 300px;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 2px 10px var(--black-a7);  
-    }
+    box-shadow: 0 2px 10px var(--black-a7);
+}
+
+
 
 .group > * {
     max-width: calc(100% / 6 - (48px * 5));
@@ -58,144 +62,84 @@ body{background-image:url('../../entities/photo/heartback.png');}
     box-shadow: 0 2px 10px var(--black-a7);
 }
 
-.Image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
 .background-image {
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
-  }
-  
-  .text-container { 
-    color:black;
+}
+
+.text-container {
+    color: black;
     font-size: 16px;
-    font-family:"Podkova", serif;;
-    max-width: 600px; /* Set a maximum width for the container */
-    margin:  auto; /* Center the container horizontally */
-    padding: 20px; /* Add some padding around the content */
-    background-color: #c7b0cc; /* Add a light gray background color */
-    border-radius: 15px; /* Add some rounded corners */ 
-    margin-top: 15px; 
+    font-family: "Podkova", serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #c7b0cc;
+    border-radius: 15px;
+    margin-top: 15px;
 }
 
-.group-punk {
+.group-punk,
+.group-rock,
+.group-rap,
+.group-jazz,
+.group-hiphop,
+.group-rnb,
+.group-electronic,
+.group-pop,
+.group-bos,
+.group-alternative {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-
-.group-rock {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-.group-rap {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-.group-jazz {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-} 
-
-.group-hiphop {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
+    align-items: column;
+    margin-left: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.group-rnb {
+.box.alternative {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
+    align-items: center;
     margin-bottom: 20px;
+    width: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px var(--black-a7);
 }
 
-.group-alternative{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-
-.group-electronic{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-
-.group-pop{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-
-.group-bos{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items:column;
-    margin-left:20px;
-    margin-top: 20px; 
-    margin-bottom: 20px;
-}
-.box {
-    border: 1px solid black;
-    aspect-ratio: 1;
+.Image {
+    object-fit: cover;
     width: 100%;
+    height: 100%;
+    margin-right: 10px;
 }
+
+.song-name {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: rgb(196, 71, 71);
+    margin-left: 10px;
+}
+
 .btn-flat {
     background-color: #CF91D8;
     color: white;
     border-radius: 10px;
     transform: translateX(165pt);
 }
-.btn-flat:hover { background-color:  rgb(196, 24, 167); }
+
+.btn-flat:hover {
+    background-color: rgb(196, 24, 167);
+}
+
 .btn-xxl {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
 }
+
 ::-webkit-scrollbar {
     width: 20px;
     height: 100%;
@@ -216,10 +160,21 @@ body{background-image:url('../../entities/photo/heartback.png');}
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(196, 24, 167);
 }
-.h1 {
-    color:  black;
-    margin: 20px; 
- }
-      
-    
 
+.h1 {
+    color: black;
+    margin: 20px;
+}
+
+.box.rock,
+.box.rap,
+.box.jazz,
+.box.hiphop,
+.box.rnb,
+.box.punk,
+.box.alternative,
+.box.electronic,
+.box.pop,
+.box.bos {
+    max-width: 150px;
+}

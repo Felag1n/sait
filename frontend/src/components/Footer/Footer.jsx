@@ -3,6 +3,8 @@ import Logo from "../Logo/Logo";
 import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord ,faVk,faTelegram,faInstagramSquare } from '@fortawesome/free-brands-svg-icons'; // 
+import { usePlayerStore } from "../../store/playerStore";
+import Player from "../Player/Player";
 
 function Footer() {
     const scrollToTop = () => {
@@ -28,20 +30,20 @@ function Footer() {
                 </nav>
 
                 <div className={styles['button-group']}>
-                    <Link className="button button-inline" style={{ textDecoration: 'none' }} to="/support">Поддержка</Link>
+                    <Link className="button button-inline" style={{ textDecoration: 'none' }} to="https://www.donationalerts.com/r/felagin">Поддержка</Link>
                     <Link className="button" style={{ textDecoration: 'none' }} to="/FAQ">FAQ</Link>
                 </div>
                 <div className={styles['social-icons']}>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faDiscord} size="lg" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://vk.com/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faVk} size="lg" />
                     </a>
                     <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faTelegram} size="lg" />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagramSquare} size="lg" />
                     </a>
                 </div>

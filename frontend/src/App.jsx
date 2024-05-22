@@ -6,7 +6,6 @@ import FramePage from './pages/FramePage'
 import Footer from "./components/Footer/Footer";
 import Charts from "./pages/Charts";
 import CardFrame from "./components/CardFrame/CardFrame"
-import Suport from "./pages/Suport";
 import FAQ from "./pages/FAQ";
 import Uslugi from "./pages/Uslugi";
 import Contacts from "./pages/Contacts";
@@ -39,7 +38,7 @@ function App() {
         <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path="/charts" element={<Charts />} />
-            <Route path="/suport" element={<Suport />}/>
+          
             <Route path="/FAQ" element={<FAQ />}/>
             <Route path="/Uslugi" element={<Uslugi />}/>
             <Route path="/contacts" element={<Contacts />}/>
@@ -84,12 +83,12 @@ function Layout() {
          {/* <CardFrame/>  */}
         <Outlet />
 
-        { isPlayingNow && (
-          <Player
-            player={{ songUrl }}
-          />
-        )}
       </div>
+      { isPlayingNow && (
+        <Player
+          player={{ songUrl }}
+        />
+      )}
       <Footer/>
     </div>
   )

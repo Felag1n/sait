@@ -37,7 +37,7 @@ function CardFrame(props) {
           <p className={styles['card-footer']}>
             30 Mins &nbsp; | &nbsp; 1 Serving
           </p>
-          <PlayerButton/>
+          {/* <PlayerButton/> */}
         </div>
       </div>
     </div>

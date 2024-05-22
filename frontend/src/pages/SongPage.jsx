@@ -23,6 +23,10 @@ export function SongPage() {
             .then(setSong)
     }, [])
 
+    useEffect(() => {
+        console.log(song)
+    }, [song])
+
     return (
         <div style={{ color: 'red' }}>
             <PlayButton
