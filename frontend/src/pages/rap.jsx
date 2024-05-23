@@ -48,10 +48,11 @@ export default function Rap() {
       <div className="group-rap">
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box rap" style={{ maxWidth: 150 }}>
-              <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
+            <div className="box rap">
+              <img className="Image" src={song.cover}  />
+             
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>

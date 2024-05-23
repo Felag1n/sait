@@ -43,10 +43,11 @@ export default function Rnb() {
       <div className="group-rnb">
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box rnb" style={{ maxWidth: 150 }}>
-              <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
+            <div className="box rnb" >
+              <img className="Image" src={song.cover}  />
+              
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>

@@ -45,10 +45,11 @@ export default function Rock() {
       <div className="group-rock">
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box rock" style={{ maxWidth: 150 }}>
-              <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
+            <div className="box rock" >
+              <img className="Image" src={song.cover} />
+             
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>

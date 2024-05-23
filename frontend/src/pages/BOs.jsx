@@ -37,10 +37,10 @@ export default function BOs() {
       <div className="group-bos">
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box bos" style={{ maxWidth: 150 }}>
+            <div className="box bos" >
               <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>

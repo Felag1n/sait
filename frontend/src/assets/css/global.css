@@ -80,7 +80,6 @@ body {
     border-radius: 15px;
     margin-top: 15px;
 }
-
 .group-punk,
 .group-rock,
 .group-rap,
@@ -92,36 +91,36 @@ body {
 .group-bos,
 .group-alternative {
     display: flex;
+    align-items: flex-start; 
+    gap: 24px; 
     flex-direction: column;
-    gap: 4px;
     align-items: column;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.box.alternative {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 150px;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px var(--black-a7);
-}
 
-.Image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin-right: 10px;
+
+.box.rock,
+.box.rap,
+.box.jazz,
+.box.hiphop,
+.box.rnb,
+.box.punk,
+.box.alternative,
+.box.electronic,
+.box.pop,
+.box.bos> .Image {
+    width: 150px;
+    height: 150px;
 }
 
 .song-name {
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    color: rgb(196, 71, 71);
-    margin-left: 10px;
+    color: rgb(203, 37, 195);
+    margin-right: 50px;
 }
 
 .btn-flat {
@@ -176,5 +175,10 @@ body {
 .box.electronic,
 .box.pop,
 .box.bos {
-    max-width: 150px;
+    aspect-ratio: initial;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px var(--black-a7); 
 }

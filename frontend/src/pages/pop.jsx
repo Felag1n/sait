@@ -45,10 +45,11 @@ export default function Pop() {
       <div className="group-pop">
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box pop" style={{ maxWidth: 150 }}>
-              <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
+            <div className="box pop" >
+              <img className="Image" src={song.cover}  />
+            
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>

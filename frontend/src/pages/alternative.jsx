@@ -40,9 +40,9 @@ export default function Alternative() {
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
             <div className="box alternative">
-              <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
+              <img className="Image" src={song.cover}  />
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>

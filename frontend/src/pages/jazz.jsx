@@ -47,10 +47,11 @@ export default function Jazz() {
       <div className="group-jazz">
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box jazz" style={{ maxWidth: 150 }}>
-              <img className="Image" src={song.cover} alt={song.name} />
-              <div className="song-name">{song.name}</div>
+            <div className="box jazz">
+              <img className="Image" src={song.cover}  />
+
             </div>
+            <div className="song-name">{song.name}</div>
           </Link>
         ))}
       </div>
