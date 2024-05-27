@@ -46,34 +46,34 @@ function HomePage() {
         <div>
 
         <div className="body-div grid">
-                <Link to="/rap" className="grid-box">
+                <Link to="/ganre/8" className="grid-box">
                     <img src={rap} alt="Image 5" />
                 </Link>
-                <Link to="/punk" className="grid-box">
+                <Link to="/ganre/7" className="grid-box">
                     <img src={punk} alt="Image 1" />
                 </Link>
-                <Link to="/rock" className="grid-box">
+                <Link to="/ganre/2" className="grid-box">
                     <img src={rock} alt="Image 2" />
                 </Link>
-                <Link to="/jazz" className="grid-box">
+                <Link to="/ganre/5" className="grid-box">
                     <img src={jazz} alt="Image 3" />
                 </Link>
-                <Link to="/hiphop" className="grid-box">
+                <Link to="/ganre/4" className="grid-box">
                 <img src={hiphops} alt="Image 4" />
                 </Link>
-                <Link to="/rnb" className="grid-box">
+                <Link to="/ganre/10" className="grid-box">
                 <img src={rnb} alt="Image 6" />
                 </Link>
-                <Link to="/alternative" className="grid-box">
+                <Link to="/ganre/1" className="grid-box">
                 <img src={alternative} alt="Image 7" />
                 </Link>
-                <Link to="/electronic" className="grid-box">
+                <Link to="/ganre/3" className="grid-box">
                 <img src={electronic} alt="Image 8" />
                 </Link>
-                <Link to="/pop" className="grid-box">
+                <Link to="/ganre/6" className="grid-box">
                 <img src={pop} alt="pop" />
                 </Link>
-                <Link to="/BOs" className="grid-box">
+                <Link to="/ganre/9" className="grid-box">
                 <img src={BOs} alt="80's" />
                 </Link>
             </div>

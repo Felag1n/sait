@@ -1,4 +1,5 @@
 @import '@radix-ui/colors/black-alpha.css';
+
 body {
     background-image: url('../../entities/photo/heartback.png');
 }
@@ -35,25 +36,19 @@ body {
     align-items: flex-start; 
     gap: 24px; 
     flex-direction: column;
-    align-items: column;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;    
 }
 
-
-
-
-
 .group > * {
-    max-width: calc(100% / 6 - (48px * 5));
-    min-width: calc(100% / 5);
+    flex: 1 1 calc(20% - 48px); /* Ensure the items scale flexibly */
+    max-width: 200px; /* Optional maximum width */
+    min-width: 150px; /* Optional minimum width */
 }
 
 .box {
-    flex: 0 0 1;
     aspect-ratio: 1;
-    width: 300px;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 10px var(--black-a7);
@@ -77,39 +72,23 @@ body {
     border-radius: 15px;
     margin-top: 15px;
 }
-.group-charts
-.group-punk,
-.group-rock,
-.group-rap,
-.group-jazz,
-.group-hiphop,
-.group-rnb,
-.group-electronic,
-.group-pop,
-.group-bos,
-.group-alternative {
+
+.group-genre,
+.group-charts {
     display: flex;
     align-items: flex-start; 
     gap: 24px; 
     flex-direction: column;
-    align-items: column;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-
-.box-charts
-.box.rock,
-.box.rap,
-.box.jazz,
-.box.hiphop,
-.box.rnb,
-.box.punk,
-.box.alternative,
-.box.electronic,
-.box.pop,
-.box.bos> .Image {
+.group-genre,
+.group-charts,
+.box.genre,
+.box-charts,
+.box-genre > .image {
     width: 150px;
     height: 150px;
 }
@@ -162,21 +141,36 @@ body {
     color: black;
     margin: 20px;
 }
-.box-charts
-.box.rock,
-.box.rap,
-.box.jazz,
-.box.hiphop,
-.box.rnb,
-.box.punk,
-.box.alternative,
-.box.electronic,
-.box.pop,
-.box.bos {
-    aspect-ratio: initial;
+
+.box.genre,
+.box-charts {
     display: flex;
     align-items: center;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 2px 10px var(--black-a7); 
+}
+
+.genre-content h1 {
+    font-family: 'Yeseva-One, sans-serif';
+    color: black;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .group > * {
+        flex: 1 1 calc(33.33% - 32px);
+    }
+}
+
+@media (max-width: 768px) {
+    .group > * {
+        flex: 1 1 calc(50% - 24px);
+    }
+}
+
+@media (max-width: 480px) {
+    .group > * {
+        flex: 1 1 calc(100% - 16px);
+    }
 }

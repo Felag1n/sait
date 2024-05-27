@@ -4,7 +4,8 @@
   "info": {
     "singularName": "album",
     "pluralName": "albums",
-    "displayName": "Album"
+    "displayName": "Album",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,22 @@
       "relation": "manyToOne",
       "target": "api::author.author",
       "inversedBy": "albums"
+    },
+    "songs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::song.song",
+      "mappedBy": "album"
+    },
+    "Cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

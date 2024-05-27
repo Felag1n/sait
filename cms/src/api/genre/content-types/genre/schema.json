@@ -4,7 +4,8 @@
   "info": {
     "singularName": "genre",
     "pluralName": "genres",
-    "displayName": "Genre"
+    "displayName": "Genre",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,20 +16,26 @@
       "type": "string"
     },
     "Cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "songs": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::song.song",
       "mappedBy": "genre"
+    },
+    "description": {
+      "type": "richtext",
+      "default": "Описание жанра",
+      "required": true
     }
   }
 }

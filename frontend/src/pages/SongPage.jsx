@@ -19,6 +19,7 @@ export function SongPage() {
             .then(r => ({
                 songUrl: "http://localhost:1337" + r.data.attributes.Song.data.attributes.url,
                 name: r.data.attributes.Name,
+                cover: 'http://localhost:1337' + r.data.attributes.Cover.data[0].attributes.url
             }))
             .then(setSong)
     }, [])
@@ -29,6 +30,18 @@ export function SongPage() {
 
     return (
         <div style={{ color: 'red' }}>
+            {/* <a href="#">
+                <div className="box genre">
+                    <img className="Image" src={song.cover}  />
+                </div>
+                <div className="song-name">{song.name}</div>
+            </a> */}
+            {/* <Link to={`/song/${song.id}`} key={song.id}>
+                <div className="box alternative">
+                <img className="Image" src={song.cover}  />
+                </div>
+                <div className="song-name">{song.name}</div>
+            </Link> */}
             <PlayButton
                 onClick={() => setSongAtStore(song.songUrl)}
             />

@@ -36,7 +36,6 @@ export default function Charts() {
               <img  
                 className="Image"
                 src={song.coverUrl}
-                
               />
              <br/>
              {song.name}
