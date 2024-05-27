@@ -788,6 +788,41 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiAlbumAlbum extends Schema.CollectionType {
+  collectionName: 'albums';
+  info: {
+    singularName: 'album';
+    pluralName: 'albums';
+    displayName: 'Album';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Name: Attribute.String;
+    author: Attribute.Relation<
+      'api::album.album',
+      'manyToOne',
+      'api::author.author'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::album.album',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::album.album',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiAuthorAuthor extends Schema.CollectionType {
   collectionName: 'authors';
   info: {
@@ -805,6 +840,11 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
       'api::author.author',
       'oneToMany',
       'api::song.song'
+    >;
+    albums: Attribute.Relation<
+      'api::author.author',
+      'oneToMany',
+      'api::album.album'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -919,6 +959,7 @@ export interface ApiSongSong extends Schema.CollectionType {
       'api::genre.genre'
     >;
     Cover: Attribute.Media;
+    TextSong: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -947,6 +988,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::album.album': ApiAlbumAlbum;
       'api::author.author': ApiAuthorAuthor;
       'api::chart.chart': ApiChartChart;
       'api::genre.genre': ApiGenreGenre;

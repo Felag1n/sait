@@ -20,7 +20,7 @@ function HomePage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:1337/api/authors?populate=*')
+      .get('http://localhost:1337/api/authors?populate=*&pagination[pageSize]=100000000')
       .then((r) => {
         const _authors = r.data.data.map((author) => ({
             id: author.id,

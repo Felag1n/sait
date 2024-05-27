@@ -7,7 +7,7 @@ export default function Charts() {
  
   useEffect(() => {
     (async () => {
-      const responce = (await axios.get('http://localhost:1337/api/chart?populate=*')).data
+      const responce = (await axios.get('http://localhost:1337/api/chart?populate=*&pagination[pageSize]=30')).data
  
       const songs = responce.data.attributes.songs.data
  
@@ -30,15 +30,16 @@ export default function Charts() {
         <>
         <h1 style={{ textAlign: "center", color: "white" }}>Чарты</h1>
        <div className="group-charts">
-        {songs.map((song, index) => (
-          <Link to="/page" key={index}>
-            <div className="box-charts" style={{maxWidth: 400, marginLeft: '610px'  }}>
+        {songs.map((song) => (
+           <Link to={`/song/${song.id}`} key={song.id}>
+            <div className="box-charts" style={{ marginLeft: '610px'  }}>
               <img  
                 className="Image"
                 src={song.coverUrl}
-                alt={song.name}
+                
               />
-            
+             <br/>
+             {song.name}
             </div>
           </Link>
         ))}
