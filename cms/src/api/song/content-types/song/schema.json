@@ -46,14 +46,14 @@
         "audios"
       ]
     },
-    "TextSong": {
-      "type": "text"
-    },
     "album": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::album.album",
       "inversedBy": "songs"
+    },
+    "TextSong": {
+      "type": "richtext"
     }
   }
 }

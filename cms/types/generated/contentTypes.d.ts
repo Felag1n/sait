@@ -970,12 +970,12 @@ export interface ApiSongSong extends Schema.CollectionType {
       'api::genre.genre'
     >;
     Cover: Attribute.Media;
-    TextSong: Attribute.Text;
     album: Attribute.Relation<
       'api::song.song',
       'manyToOne',
       'api::album.album'
     >;
+    TextSong: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
