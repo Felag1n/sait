@@ -31,7 +31,7 @@ body {
     column-gap: 48px;
 }
 
-.group-charts {
+.group-charts { 
     display: flex;
     align-items: flex-start; 
     gap: 24px; 
@@ -48,6 +48,7 @@ body {
 }
 
 .box {
+    position: relative; /* Add this to contain absolute positioning */
     aspect-ratio: 1;
     border-radius: 6px;
     overflow: hidden;
@@ -72,7 +73,7 @@ body {
     border-radius: 15px;
     margin-top: 15px;
 }
-
+.group-album
 .group-genre,
 .group-charts {
     display: flex;
@@ -83,14 +84,14 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+.group-album
+.box.album,
 .group-genre,
 .group-charts,
 .box.genre,
 .box-charts,
 .box-genre > .image {
     width: 150px;
-    
 }
 
 .song-name {
@@ -141,7 +142,7 @@ body {
     color: black;
     margin: 20px;
 }
-
+.box.album
 .box.genre,
 .box-charts {
     display: flex;
@@ -154,6 +155,18 @@ body {
 .genre-content h1 {
     font-family: 'Yeseva-One, sans-serif';
     color: black;
+}
+
+.box.genre .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hidden */
+}
+
+.box.genre:hover .play-button {
+    display: block; /* Show on hover */
 }
 
 /* Media queries for responsive design */
