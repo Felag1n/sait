@@ -35,6 +35,7 @@ export function SongPage() {
 
     return (
         <div>
+            <h1 style={{ color: 'rgb(80, 10, 67)' }}>{song.name}</h1>
             <div className="group-genre">
                 <div className="box genre">
                     <img className="image" src={song.cover} alt={song.name} />
