@@ -143,7 +143,7 @@ body {
 }
 
 .h1 {
-    color: black;
+    color: rgb(178, 58, 183);
     margin: 20px;
 }
 .box.album
@@ -158,7 +158,7 @@ body {
 
 .genre-content h1 {
     font-family: 'Yeseva-One, sans-serif';
-    color: black;
+    color: rgb(155, 62, 178);
 }
 
 .box.genre .play-button {

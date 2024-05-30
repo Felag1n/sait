@@ -2,14 +2,13 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
-import Markdown from 'markdown-to-jsx';
 import PlayButton from '../components/PlayerButton/PlayButton';
 
 export default function AlbumPage() {
-    const albumId = +useParams().id
+  const albumId = +useParams().id;
 
   const [songs, setSongs] = useState([]);
-  const [album, setAlbum] = useState(null)
+  const [album, setAlbum] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,9 +17,9 @@ export default function AlbumPage() {
         const albumData = albumResponse.data.data.attributes;
 
         setAlbum({
-            id: albumResponse.data.data.id,
-            name: albumData.Name,
-        })
+          id: albumResponse.data.data.id,
+          name: albumData.Name,
+        });
 
         const songPromises = albumData.songs.data.map(async (rawSong) => {
           const songResponse = await axios.get(`http://localhost:1337/api/songs/${rawSong.id}?populate=*`);
@@ -46,7 +45,6 @@ export default function AlbumPage() {
   }, [albumId]);
 
   const setSongAtStore = (songUrl) => {
-    
     console.log("Playing song:", songUrl);
   };
 
@@ -55,32 +53,32 @@ export default function AlbumPage() {
       {/* <div className="text-container album-content">
         <Markdown>{description}</Markdown>
       </div> */}
-    {album !== null && (
+      {album !== null && (
         <div>
-            {album.name}
-
-            <div>
-                <div className="group-album">
-                    {songs.map((song) => (
-                        <Link to={`/song/${song.id}`} key={song.id} className="song-link">
-                            <div className="box album">
-                                <img className="image" src={song.coverUrl} alt={song.name} />
-                                <div className="play-button">
-                                    <PlayButton
-                                        onClick={(e) => {
-                                            e.preventDefault(); 
-                                            setSongAtStore(song.songUrl);
-                                        }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="song-name">{song.name}</div>
-                        </Link>
-                    ))}
-                </div>
+          <h1 style={{ color: 'rgb(80, 10, 67)' }}>{album.name}</h1>
+          
+          <div>
+            <div className="group-album">
+              {songs.map((song) => (
+                <Link to={`/song/${song.id}`} key={song.id} className="song-link">
+                  <div className="box album">
+                    <img className="image" src={song.coverUrl} alt={song.name} />
+                    <div className="play-button">
+                      <PlayButton
+                        onClick={(e) => {
+                          e.preventDefault(); 
+                          setSongAtStore(song.songUrl);
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="song-name">{song.name}</div>
+                </Link>
+              ))}
             </div>
+          </div>
         </div>
-    )}
+      )}
       {/* <div className="group-album">
         
       </div> */}

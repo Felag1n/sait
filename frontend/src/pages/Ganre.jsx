@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import Markdown from 'markdown-to-jsx';
+  
 
 export default function Genre() {
   const { id } = useParams();
@@ -10,11 +11,17 @@ export default function Genre() {
 
   const [songs, setSongs] = useState([]);
   const [description, setDescription] = useState('');
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const genreResponse = await axios.get(`http://localhost:1337/api/genres/${genreId}?populate=*`);
+        if (!genreResponse.data.data) {
+          setNotFound(true);
+          return;
+        }
+        
         const genreData = genreResponse.data.data.attributes;
         setDescription(genreData.description);
 
@@ -34,11 +41,16 @@ export default function Genre() {
         setSongs(resolvedSongs);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setNotFound(true);
       }
     };
 
     fetchData();
   }, [genreId]);
+
+  if (notFound) {
+    return <PageNotFound />;
+  }
 
   return (
     <>
