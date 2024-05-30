@@ -801,11 +801,6 @@ export interface ApiAlbumAlbum extends Schema.CollectionType {
   };
   attributes: {
     Name: Attribute.String;
-    author: Attribute.Relation<
-      'api::album.album',
-      'manyToOne',
-      'api::author.author'
-    >;
     songs: Attribute.Relation<
       'api::album.album',
       'oneToMany',
@@ -847,11 +842,6 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
       'api::author.author',
       'oneToMany',
       'api::song.song'
-    >;
-    albums: Attribute.Relation<
-      'api::author.author',
-      'oneToMany',
-      'api::album.album'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

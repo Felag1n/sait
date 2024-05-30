@@ -15,12 +15,6 @@
     "Name": {
       "type": "string"
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "albums"
-    },
     "songs": {
       "type": "relation",
       "relation": "oneToMany",
@@ -28,14 +22,15 @@
       "mappedBy": "album"
     },
     "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

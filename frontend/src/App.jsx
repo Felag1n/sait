@@ -21,6 +21,7 @@ import RegistrationForm from "./components/Reg/Reg";
 import { usePlayerStore } from './store/playerStore'
 import { SongPage } from "./pages/SongPage";
 import Ganre from "./pages/Ganre";
+import AlbumPage from "./pages/AlbumPage";
 
 function App() {
   return(
@@ -40,6 +41,7 @@ function App() {
             <Route path="/register" element={<RegistrationForm />}></Route>
             <Route path="/song/:id" element={<SongPage />}></Route>
             <Route path="/ganre/:id" element={<Ganre />}></Route>
+            <Route path="/album/:id" element={<AlbumPage />}></Route>
 
                     {/* <Route path="about" element={<About />} /> */}
             {/* <Route path="dashboard" element={<Dashboard />} /> */}

@@ -84,13 +84,17 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.group-album
-.box.album,
-.group-genre,
-.group-charts,
-.box.genre,
-.box-charts,
+.group-album > .image,
+.box.album > .image,
+.group-genre > .image,
+.group-charts > .image,
+.box.genre > .image,
+.box-charts > .image,
 .box-genre > .image {
+    display: block;
+    width: 100%;
+}
+.box {
     width: 150px;
 }
 

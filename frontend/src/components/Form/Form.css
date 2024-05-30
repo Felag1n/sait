@@ -11,88 +11,96 @@ button {
 }
 
 .FormRoot {
-  width: 260px;
-  overflow: hidden;
+  width: 300px;
   margin: 0 auto;
-  transform: translateY(30%);
+  padding: 20px;
+  background-color: var(--mauve1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .FormField {
-  display: grid;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.FormFieldHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .FormLabel {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 35px;
-  color: white;
+  color: var(--mauve12);
 }
 
 .FormMessage {
-  font-size: 13px;
-  font-weight: bold;
-  color:rgb(252, 33, 33);
+  font-size: 12px;
+  color: rgb(252, 33, 33);
   opacity: 0.8;
 }
 
 .Input,
 .Textarea {
   width: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: var(--violet11);
+  background-color: var(--black-a3);
+  border: 1px solid var(--black-a7);
   border-radius: 4px;
-  
-  font-size: 15px;
-  color: rgb(194, 147, 255);
-  background-color:0 0 0 1px var(--black-a9);
-  box-shadow: 0 0 0 1px white;
-}
-.Input:hover,
-.Textarea:hover {
-  box-shadow: 0 0 0 1px rgb(202, 144, 216);
-}
-.Input:focus,
-.Textarea:focus {
-  box-shadow: 0 0 0 2px rgb(196, 24, 167);
-}
-.Input::selection,
-.Textarea::selection {
-  background-color: RoyalBlue	;
-  color: rgb(255, 255, 255);
+  outline: none;
 }
 
-.Input {
-  padding: 0 10px;
-  height: 35px;
-  line-height: 1;
+.Input:hover,
+.Textarea:hover {
+  border-color: var(--violet9);
+}
+
+.Input:focus,
+.Textarea:focus {
+  border-color: var(--violet11);
+  box-shadow: 0 0 0 2px var(--violet8);
+}
+
+.Input::selection,
+.Textarea::selection {
+  background-color: RoyalBlue;
+  color: white;
 }
 
 .Textarea {
   resize: none;
-  padding: 10px;
 }
 
 .Button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  padding: 0 15px;
-  font-size: 15px;
-  line-height: 1;
-  font-weight: 500;
-  height: 35px;
   width: 100%;
-
-  background-color: rgb(194, 147, 255);
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
   color: white;
-  box-shadow: 0 2px 10px var(--black-a7);
+  background-color: var(--violet8);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
+
 .Button:hover {
-  background-color:  rgb(196, 24, 167);
+  background-color: var(--violet9);
 }
+
 .Button:focus {
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px var(--violet11);
+}
+
+.form-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.alert {
+  font-size: 12px;
+  color: var(--mauve11);
 }

@@ -29,12 +29,6 @@
       "relation": "oneToMany",
       "target": "api::song.song",
       "mappedBy": "author"
-    },
-    "albums": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::album.album",
-      "mappedBy": "author"
     }
   }
 }

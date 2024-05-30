@@ -17,6 +17,7 @@ function HomePage() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const [authors, setAuthors] = useState([])
+  const [albums, setAlmums] = useState([])
 
   useEffect(() => {
     axios
@@ -30,6 +31,18 @@ function HomePage() {
 
         setAuthors(shuffleArray(_authors));
       });
+
+    axios
+      .get('http://localhost:1337/api/albums?populate=*')
+      .then((rawAlmubs) => {
+        const albums = rawAlmubs.data.data.map((album) => ({
+          id: album.id,
+          name: album.attributes.Name,
+          coverURL: 'http://localhost:1337' + album.attributes.Cover.data.attributes.url,
+        }))
+
+        setAlmums(albums)
+      })
   }, []);
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -96,13 +109,13 @@ function HomePage() {
         <h1 style={{ textAlign: "center", color: "white" }}>Последниие релизы</h1>
         
         {  <div className="group">
-  {[...Array(7)].map((_, index) => (
-    <Link to="/page" key={index}>
+  {albums.map((album) => (
+    <Link to={`/album/${album.id}`} key={album.id}>
       <div className="box" >
         <img
           className="Image"
-          src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
-          alt="Landscape photograph by Tobias Tullius"
+          src={album.coverURL}
+          alt={`Обложка ${album.name}`}
         />
         Lorem.
       </div>
