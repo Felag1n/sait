@@ -14,7 +14,7 @@ button {
   width: 300px;
   margin: 0 auto;
   padding: 20px;
-  background-color: black;  /* задний цвет всего блока */
+  background-color: black; 
   border-radius: 8px;
   box-shadow: 0 4px 12px #CF91D8;
   position: relative;

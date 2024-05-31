@@ -42,7 +42,7 @@ export function SongPage() {
                     <div className="play-button">
                         <PlayButton
                             onClick={(e) => {
-                                e.preventDefault(); // Prevent link navigation on button click
+                                e.preventDefault(); 
                                 setSongAtStore(song.songUrl);
                             }}
                         />

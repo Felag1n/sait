@@ -11,7 +11,7 @@ const FormDemo = () => (
 
     <Form.Field className="FormField" name="name">
       <div className="FormFieldHeader">
-        <Form.Label className="FormLabel">Игровой никнейм (или Ваше имя)</Form.Label>
+        <Form.Label className="FormLabel">никнейм (или Ваше имя)</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
           Пожалуйста, введите свое имя
         </Form.Message>
@@ -32,7 +32,7 @@ const FormDemo = () => (
         </Form.Message>
       </div>
       <Form.Control asChild>
-        <input className="Input" type="email" required placeholder="Example1337@gmail.com" />
+        <input className="Input" type="email" required placeholder="Example@gmail.com" />
       </Form.Control>
     </Form.Field>
 
@@ -44,7 +44,7 @@ const FormDemo = () => (
         </Form.Message>
       </div>
       <Form.Control asChild>
-        <textarea className="Textarea" required placeholder="У меня возникла проблема с регистрацией на сервере.." />
+        <textarea className="Textarea" required placeholder="У меня возникла проблема с регистрацией .." />
       </Form.Control>
     </Form.Field>
 
