@@ -14,9 +14,11 @@ button {
   width: 300px;
   margin: 0 auto;
   padding: 20px;
-  background-color: var(--mauve1);
+  background-color: black;  /* задний цвет всего блока */
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px #CF91D8;
+  position: relative;
+  top: 55px;
 }
 
 .FormField {
@@ -30,9 +32,9 @@ button {
 }
 
 .FormLabel {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--mauve12);
+  font-size: 15px;
+  font-weight: 530;
+  color:#CF91D8;
 }
 
 .FormMessage {
@@ -46,16 +48,16 @@ button {
   width: 100%;
   padding: 8px 10px;
   font-size: 14px;
-  color: var(--violet11);
+  color:#b70071;
   background-color: var(--black-a3);
-  border: 1px solid var(--black-a7);
+  border: 1px solid #ae4dee;;
   border-radius: 4px;
   outline: none;
 }
 
 .Input:hover,
 .Textarea:hover {
-  border-color: var(--violet9);
+  border-color:rgb(226, 92, 204);
 }
 
 .Input:focus,
@@ -80,7 +82,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   color: white;
-  background-color: var(--violet8);
+  background-color:  rgb(226, 92, 204);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -88,11 +90,11 @@ button {
 }
 
 .Button:hover {
-  background-color: var(--violet9);
+  background-color: rgb(196, 24, 167);
 }
 
 .Button:focus {
-  box-shadow: 0 0 0 2px var(--violet11);
+  box-shadow: 0 0 0 2px#ae4dee;
 }
 
 .form-footer {
@@ -102,5 +104,5 @@ button {
 
 .alert {
   font-size: 12px;
-  color: var(--mauve11);
+  color: red;
 }
