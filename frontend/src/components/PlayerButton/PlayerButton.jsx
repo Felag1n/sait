@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Player from "../Player/Player";
 import styles from './PlayerButton.module.css'
 
 const PlayerButton = () => {

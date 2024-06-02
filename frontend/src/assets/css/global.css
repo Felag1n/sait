@@ -42,13 +42,13 @@ body {
 }
 
 .group > * {
-    flex: 1 1 calc(20% - 48px); /* Ensure the items scale flexibly */
-    max-width: 200px; /* Optional maximum width */
-    min-width: 150px; /* Optional minimum width */
+    flex: 1 1 calc(20% - 48px); 
+    max-width: 200px; 
+    min-width: 150px; 
 }
 
 .box {
-    position: relative; /* Add this to contain absolute positioning */
+    position: relative; 
     aspect-ratio: 1;
     border-radius: 6px;
     overflow: hidden;
@@ -61,7 +61,10 @@ body {
     background-size: cover;
     background-position: center;
 }
-
+.group-charts{
+  display: flex;
+  justify-content: center;
+}
 .text-container {
     color: black;
     font-size: 16px;

@@ -48,13 +48,15 @@ export default function Charts() {
   return (
     <>
       <h1 style={{ textAlign: "center", color: "white" }}>Чарты</h1>
-      <div className="group-charts" style={{ marginLeft: '610px' }}>
+      <div className="group-charts" style={{ marginLeft: '690px', display: 'flex', justifyContent: 'center' }}>
         {songs.map((song) => (
           <Link to={`/song/${song.id}`} key={song.id}>
-            <div className="box-charts">
+            <div className="box charts">
               <img className="image" src={song.coverUrl} alt={song.name} />
             </div>
+            <br/>
             <div className="song-name">{song.name}</div>
+            
           </Link>
         ))}
       </div>

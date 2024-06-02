@@ -50,9 +50,7 @@ export default function AlbumPage() {
 
   return (
     <>
-      {/* <div className="text-container album-content">
-        <Markdown>{description}</Markdown>
-      </div> */}
+      
       {album !== null && (
         <div>
           <h1 style={{ color: 'rgb(80, 10, 67)' }}>{album.name}</h1>

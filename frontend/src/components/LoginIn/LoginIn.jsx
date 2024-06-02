@@ -50,9 +50,6 @@ const Login = () => {
                 <input value={password} onChange={(event) => setPassword(event.target.value)} type="password" placeholder='Пароль' />
                 <button>Войти</button>
                 {error && <p className="error">{error}</p>}
-                <div className="recover">
-                    <a href="#">Забыли пароль?</a>
-                </div>
             </form>
             <div className="member">
                 Нет аккаунта? <Link to='/register'>Зарегистрируйтесь</Link>

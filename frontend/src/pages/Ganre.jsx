@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import Markdown from 'markdown-to-jsx';
-  
+import PageNotFound from './PageNotFound';
 
 export default function Genre() {
   const { id } = useParams();
