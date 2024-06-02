@@ -111,9 +111,9 @@ function HomePage() {
         {  <div className="group">
   {albums.map((album) => (
     <Link to={`/album/${album.id}`} key={album.id}>
-      <div className="box" >
+      <div className="box album" >
         <img
-          className="Image"
+          className="image"
           src={album.coverURL}
           alt={`Обложка ${album.name}`}
         />
